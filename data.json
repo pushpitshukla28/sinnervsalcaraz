@@ -1,0 +1,725 @@
+{
+  "meta": {
+    "lastUpdated": "April 2026",
+    "currentYear": 2026
+  },
+  "players": {
+    "sinner": {
+      "name": "Jannik Sinner",
+      "shortName": "Sinner",
+      "fullName": "Jannik Sinner",
+      "dob": "August 16, 2001",
+      "age": 24,
+      "nationality": "Italian",
+      "birthplace": "San Candido, Italy",
+      "height": "1.91 m (6 ft 3 in)",
+      "plays": "Right-handed (two-handed backhand)",
+      "coach": "Darren Cahill & Simone Vagnozzi",
+      "turnedPro": 2018,
+      "currentRanking": 1,
+      "careerHighRanking": 1,
+      "firstNo1": "June 10, 2024",
+      "weeksAtNo1": "95+",
+      "careerRecord": {
+        "w": 345,
+        "l": 88
+      },
+      "winPct": 79.7,
+      "totalTitles": 27,
+      "grandSlams": 4,
+      "atpFinals": 2,
+      "masters1000": 8,
+      "atp500": 7,
+      "atp250": 6,
+      "prizeMoney": "$62.3M",
+      "yearEndNo1": [
+        2024
+      ]
+    },
+    "alcaraz": {
+      "name": "Carlos Alcaraz",
+      "shortName": "Alcaraz",
+      "fullName": "Carlos Alcaraz Garfia",
+      "dob": "May 5, 2003",
+      "age": 22,
+      "nationality": "Spanish",
+      "birthplace": "El Palmar, Murcia, Spain",
+      "height": "1.83 m (6 ft 0 in)",
+      "plays": "Right-handed (two-handed backhand)",
+      "coach": "Samuel López (prev. Juan Carlos Ferrero)",
+      "turnedPro": 2018,
+      "currentRanking": 2,
+      "careerHighRanking": 1,
+      "firstNo1": "September 12, 2022",
+      "weeksAtNo1": "90+",
+      "careerRecord": {
+        "w": 302,
+        "l": 68
+      },
+      "winPct": 81.6,
+      "totalTitles": 26,
+      "grandSlams": 7,
+      "atpFinals": 0,
+      "masters1000": 8,
+      "atp500": 9,
+      "atp250": 2,
+      "prizeMoney": "$64.9M",
+      "yearEndNo1": [
+        2022,
+        2025
+      ]
+    }
+  },
+  "h2hMatches": [
+    {
+      "year": 2026,
+      "tournament": "Monte-Carlo Masters",
+      "level": "M1000",
+      "surface": "clay",
+      "round": "Final",
+      "winner": "sinner",
+      "score": "7-6(5), 6-3"
+    },
+    {
+      "year": 2025,
+      "tournament": "ATP Finals",
+      "level": "atpfinals",
+      "surface": "indoor",
+      "round": "Final",
+      "winner": "sinner",
+      "score": "7-6(4), 7-5"
+    },
+    {
+      "year": 2025,
+      "tournament": "US Open",
+      "level": "gs",
+      "surface": "hard",
+      "round": "Final",
+      "winner": "alcaraz",
+      "score": "6-4, 6-7(1), 6-3, 6-4"
+    },
+    {
+      "year": 2025,
+      "tournament": "Cincinnati Masters",
+      "level": "M1000",
+      "surface": "hard",
+      "round": "Final",
+      "winner": "alcaraz",
+      "score": "w/ret."
+    },
+    {
+      "year": 2025,
+      "tournament": "Wimbledon",
+      "level": "gs",
+      "surface": "grass",
+      "round": "Final",
+      "winner": "sinner",
+      "score": "4-6, 6-4, 6-4, 6-4"
+    },
+    {
+      "year": 2025,
+      "tournament": "Roland Garros",
+      "level": "gs",
+      "surface": "clay",
+      "round": "Final",
+      "winner": "alcaraz",
+      "score": "4-6, 6-7(4), 6-4, 7-6(3), 7-6(2)"
+    },
+    {
+      "year": 2025,
+      "tournament": "Rome Masters",
+      "level": "M1000",
+      "surface": "clay",
+      "round": "Final",
+      "winner": "alcaraz",
+      "score": "7-6(5), 6-1"
+    },
+    {
+      "year": 2024,
+      "tournament": "Beijing 500",
+      "level": "500",
+      "surface": "hard",
+      "round": "Final",
+      "winner": "alcaraz",
+      "score": "6-7(6), 6-4, 7-6(3)"
+    },
+    {
+      "year": 2024,
+      "tournament": "Roland Garros",
+      "level": "gs",
+      "surface": "clay",
+      "round": "Semifinal",
+      "winner": "alcaraz",
+      "score": "2-6, 6-3, 3-6, 6-4, 6-3"
+    },
+    {
+      "year": 2024,
+      "tournament": "Indian Wells Masters",
+      "level": "M1000",
+      "surface": "hard",
+      "round": "Semifinal",
+      "winner": "alcaraz",
+      "score": "1-6, 6-3, 6-2"
+    },
+    {
+      "year": 2023,
+      "tournament": "Beijing 500",
+      "level": "500",
+      "surface": "hard",
+      "round": "Semifinal",
+      "winner": "sinner",
+      "score": "7-6(4), 6-1"
+    },
+    {
+      "year": 2023,
+      "tournament": "Miami Masters",
+      "level": "M1000",
+      "surface": "hard",
+      "round": "Semifinal",
+      "winner": "sinner",
+      "score": "6-7(4), 6-4, 6-2"
+    },
+    {
+      "year": 2023,
+      "tournament": "Indian Wells Masters",
+      "level": "M1000",
+      "surface": "hard",
+      "round": "Semifinal",
+      "winner": "alcaraz",
+      "score": "7-6(4), 6-3"
+    },
+    {
+      "year": 2022,
+      "tournament": "US Open",
+      "level": "gs",
+      "surface": "hard",
+      "round": "Quarterfinal",
+      "winner": "alcaraz",
+      "score": "6-3, 6-7(7), 6-7(0), 7-5, 6-3"
+    },
+    {
+      "year": 2022,
+      "tournament": "Umag 250",
+      "level": "250",
+      "surface": "clay",
+      "round": "Final",
+      "winner": "sinner",
+      "score": "6-7(5), 6-1, 6-1"
+    },
+    {
+      "year": 2022,
+      "tournament": "Wimbledon",
+      "level": "gs",
+      "surface": "grass",
+      "round": "Round of 16",
+      "winner": "sinner",
+      "score": "6-1, 6-4, 6-7(8), 6-3"
+    },
+    {
+      "year": 2022,
+      "tournament": "Miami Masters",
+      "level": "M1000",
+      "surface": "hard",
+      "round": "Quarterfinal",
+      "winner": "alcaraz",
+      "score": "7-5, 6-3"
+    }
+  ],
+  "surfaceStats": {
+    "hard": {
+      "label": "Hard (Outdoor)",
+      "sinner": {
+        "w": 215,
+        "l": 42,
+        "titles": 18,
+        "pct": 83.7
+      },
+      "alcaraz": {
+        "w": 137,
+        "l": 35,
+        "titles": 13,
+        "pct": 79.7
+      }
+    },
+    "indoor": {
+      "label": "Hard (Indoor)",
+      "sinner": {
+        "w": 62,
+        "l": 11,
+        "titles": 8,
+        "pct": 84.9
+      },
+      "alcaraz": {
+        "w": 38,
+        "l": 14,
+        "titles": 3,
+        "pct": 73.1
+      }
+    },
+    "clay": {
+      "label": "Clay",
+      "sinner": {
+        "w": 48,
+        "l": 23,
+        "titles": 4,
+        "pct": 67.6
+      },
+      "alcaraz": {
+        "w": 94,
+        "l": 14,
+        "titles": 9,
+        "pct": 87.0
+      }
+    },
+    "grass": {
+      "label": "Grass",
+      "sinner": {
+        "w": 20,
+        "l": 12,
+        "titles": 2,
+        "pct": 62.5
+      },
+      "alcaraz": {
+        "w": 32,
+        "l": 5,
+        "titles": 6,
+        "pct": 86.5
+      }
+    }
+  },
+  "tournamentStats": {
+    "gs": {
+      "ao": {
+        "label": "Australian Open",
+        "surface": "hard",
+        "sinner": {
+          "titles": 2,
+          "finals": 2,
+          "sf": 3,
+          "qf": 4
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 1,
+          "sf": 2,
+          "qf": 2
+        }
+      },
+      "rg": {
+        "label": "Roland Garros",
+        "surface": "clay",
+        "sinner": {
+          "titles": 0,
+          "finals": 1,
+          "sf": 2,
+          "qf": 3
+        },
+        "alcaraz": {
+          "titles": 2,
+          "finals": 2,
+          "sf": 3,
+          "qf": 4
+        }
+      },
+      "wimbledon": {
+        "label": "Wimbledon",
+        "surface": "grass",
+        "sinner": {
+          "titles": 1,
+          "finals": 1,
+          "sf": 2,
+          "qf": 2
+        },
+        "alcaraz": {
+          "titles": 2,
+          "finals": 2,
+          "sf": 3,
+          "qf": 3
+        }
+      },
+      "uso": {
+        "label": "US Open",
+        "surface": "hard",
+        "sinner": {
+          "titles": 1,
+          "finals": 2,
+          "sf": 2,
+          "qf": 3
+        },
+        "alcaraz": {
+          "titles": 2,
+          "finals": 2,
+          "sf": 3,
+          "qf": 4
+        }
+      }
+    },
+    "m1000": [
+      {
+        "tournament": "Indian Wells",
+        "surface": "hard",
+        "sinner": {
+          "titles": 1,
+          "finals": 1
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 2
+        }
+      },
+      {
+        "tournament": "Miami",
+        "surface": "hard",
+        "sinner": {
+          "titles": 2,
+          "finals": 2
+        },
+        "alcaraz": {
+          "titles": 0,
+          "finals": 1
+        }
+      },
+      {
+        "tournament": "Monte-Carlo",
+        "surface": "clay",
+        "sinner": {
+          "titles": 1,
+          "finals": 1
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 2
+        }
+      },
+      {
+        "tournament": "Rome",
+        "surface": "clay",
+        "sinner": {
+          "titles": 0,
+          "finals": 0
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 1
+        }
+      },
+      {
+        "tournament": "Madrid",
+        "surface": "clay",
+        "sinner": {
+          "titles": 0,
+          "finals": 0
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 1
+        }
+      },
+      {
+        "tournament": "Canadian Open",
+        "surface": "hard",
+        "sinner": {
+          "titles": 1,
+          "finals": 1
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 1
+        }
+      },
+      {
+        "tournament": "Cincinnati",
+        "surface": "hard",
+        "sinner": {
+          "titles": 1,
+          "finals": 2
+        },
+        "alcaraz": {
+          "titles": 1,
+          "finals": 1
+        }
+      },
+      {
+        "tournament": "Shanghai",
+        "surface": "hard",
+        "sinner": {
+          "titles": 1,
+          "finals": 1
+        },
+        "alcaraz": {
+          "titles": 0,
+          "finals": 0
+        }
+      },
+      {
+        "tournament": "Paris Masters",
+        "surface": "indoor",
+        "sinner": {
+          "titles": 1,
+          "finals": 1
+        },
+        "alcaraz": {
+          "titles": 0,
+          "finals": 0
+        }
+      }
+    ],
+    "combined": {
+      "label": "All Levels Combined",
+      "sinner": {
+        "titles": 27,
+        "finals": 36,
+        "pct": 75.0
+      },
+      "alcaraz": {
+        "titles": 26,
+        "finals": 35,
+        "pct": 74.3
+      }
+    }
+  },
+  "seasonStats": [
+    {
+      "year": 2019,
+      "sinner": {
+        "wl": "29-21",
+        "titles": 2,
+        "yearEndRank": 78
+      },
+      "alcaraz": {
+        "wl": "5-5",
+        "titles": 0,
+        "yearEndRank": 314
+      }
+    },
+    {
+      "year": 2020,
+      "sinner": {
+        "wl": "25-13",
+        "titles": 0,
+        "yearEndRank": 37
+      },
+      "alcaraz": {
+        "wl": "20-13",
+        "titles": 0,
+        "yearEndRank": 141
+      }
+    },
+    {
+      "year": 2021,
+      "sinner": {
+        "wl": "49-21",
+        "titles": 4,
+        "yearEndRank": 10
+      },
+      "alcaraz": {
+        "wl": "49-20",
+        "titles": 1,
+        "yearEndRank": 32
+      }
+    },
+    {
+      "year": 2022,
+      "sinner": {
+        "wl": "60-20",
+        "titles": 5,
+        "yearEndRank": 15
+      },
+      "alcaraz": {
+        "wl": "59-13",
+        "titles": 7,
+        "yearEndRank": 1
+      }
+    },
+    {
+      "year": 2023,
+      "sinner": {
+        "wl": "62-17",
+        "titles": 6,
+        "yearEndRank": 4
+      },
+      "alcaraz": {
+        "wl": "64-14",
+        "titles": 5,
+        "yearEndRank": 2
+      }
+    },
+    {
+      "year": 2024,
+      "sinner": {
+        "wl": "74-7",
+        "titles": 8,
+        "yearEndRank": 1
+      },
+      "alcaraz": {
+        "wl": "54-11",
+        "titles": 6,
+        "yearEndRank": 3
+      }
+    },
+    {
+      "year": 2025,
+      "sinner": {
+        "wl": "58-6",
+        "titles": 6,
+        "yearEndRank": 1
+      },
+      "alcaraz": {
+        "wl": "64-8",
+        "titles": 8,
+        "yearEndRank": 1
+      }
+    },
+    {
+      "year": 2026,
+      "sinner": {
+        "wl": "26-4",
+        "titles": 3,
+        "yearEndRank": null
+      },
+      "alcaraz": {
+        "wl": "20-7",
+        "titles": 2,
+        "yearEndRank": null
+      }
+    }
+  ],
+  "grandSlamTitles": {
+    "sinner": [
+      {
+        "slam": "Australian Open",
+        "year": 2024
+      },
+      {
+        "slam": "US Open",
+        "year": 2024
+      },
+      {
+        "slam": "Australian Open",
+        "year": 2025
+      },
+      {
+        "slam": "Wimbledon",
+        "year": 2025
+      }
+    ],
+    "alcaraz": [
+      {
+        "slam": "US Open",
+        "year": 2022
+      },
+      {
+        "slam": "Wimbledon",
+        "year": 2023
+      },
+      {
+        "slam": "French Open",
+        "year": 2024
+      },
+      {
+        "slam": "Wimbledon",
+        "year": 2024
+      },
+      {
+        "slam": "French Open",
+        "year": 2025
+      },
+      {
+        "slam": "US Open",
+        "year": 2025
+      },
+      {
+        "slam": "Australian Open",
+        "year": 2026
+      }
+    ]
+  },
+  "records": [
+    {
+      "who": "sinner",
+      "text": "First Italian player in history to reach ATP World No. 1 ranking (June 2024)."
+    },
+    {
+      "who": "sinner",
+      "text": "74–7 win-loss record in 2024 — one of the best single-season records in the Open Era."
+    },
+    {
+      "who": "sinner",
+      "text": "Won the ATP Finals title in 2024 and 2025, going undefeated in both editions."
+    },
+    {
+      "who": "alcaraz",
+      "text": "Youngest player in the Open Era to reach ATP World No. 1 (at age 19 years, 4 months)."
+    },
+    {
+      "who": "alcaraz",
+      "text": "Youngest year-end ATP World No. 1 in history (2022)."
+    },
+    {
+      "who": "alcaraz",
+      "text": "Youngest man in history to complete the Career Grand Slam (at age 22, with the 2026 Australian Open)."
+    },
+    {
+      "who": "alcaraz",
+      "text": "First player born in the 2000s to win a Grand Slam title (2022 US Open)."
+    },
+    {
+      "who": "both",
+      "text": "First time since Federer–Nadal–Djokovic that two players aged under 23 have combined for 10+ Grand Slam titles."
+    },
+    {
+      "who": "both",
+      "text": "Their 2025 Roland Garros final is one of the longest and highest-quality finals in Grand Slam history."
+    }
+  ],
+  "otherTrophies": [
+    {
+      "label": "ATP Finals",
+      "sinner": [
+        "2024",
+        "2025"
+      ],
+      "alcaraz": [
+        "Runner-up 2025"
+      ]
+    },
+    {
+      "label": "Masters 1000 Titles",
+      "sinner": [
+        "Canadian Open 2023",
+        "Miami 2024",
+        "Cincinnati 2024",
+        "Shanghai 2024",
+        "Paris Masters 2025",
+        "Indian Wells 2026",
+        "Miami 2026",
+        "Monte-Carlo 2026"
+      ],
+      "alcaraz": [
+        "Indian Wells 2023",
+        "Madrid 2023",
+        "Barcelona 2023",
+        "Monte-Carlo 2025",
+        "Rome 2025",
+        "Cincinnati 2025",
+        "Madrid 2025",
+        "Canadian Open 2025"
+      ]
+    },
+    {
+      "label": "Individual Awards",
+      "sinner": [
+        "Year-End No. 1 (2024)",
+        "Year-End No. 1 (2025)",
+        "ATP Finals Winner 2024",
+        "ATP Finals Winner 2025"
+      ],
+      "alcaraz": [
+        "Year-End No. 1 (2022)",
+        "Year-End No. 1 (2025)",
+        "Youngest No. 1 (Open Era)",
+        "Youngest Career Slam"
+      ]
+    }
+  ]
+}

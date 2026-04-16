@@ -1,46 +1,124 @@
 # Sinner vs Alcaraz — The Rivalry Defined
 
-A dynamic, stat-heavy frontend comparison website for the modern tennis rivalry between **Jannik Sinner** and **Carlos Alcaraz**. Inspired by comprehensive stat tracking sites but built with a custom, sleek dark theme.
+A dynamic, stat-heavy frontend comparison website for the modern tennis rivalry between **Jannik Sinner** and **Carlos Alcaraz**.
 
-Live deployment: [https://sinnervsalcaraz.vercel.app](https://sinnervsalcaraz.vercel.app)
+🔗 **Live site:** [sinnervsalcaraz.vercel.app](https://sinnervsalcaraz.vercel.app)
+
+---
 
 ## Features
 
-- **Single-File Architecture**: The entire frontend (HTML, CSS, JS and JSON data) is completely self-contained within `index.html`.
-- **Comprehensive Head-to-Head**: Complete match log (2022-2026), filterable by Grand Slams, Masters 1000s, surface, and finals.
-- **Deep Career Stats**: Dynamic comparison bars for total titles, win percentage, and tournament levels.
-- **Surface Breakdown**: Detailed W-L records across Hard (Outdoor & Indoor), Clay, and Grass.
-- **Tournament Insights**: Granular look at performance in all 4 Grand Slams, Masters 1000s, ATP 500s, and ATP 250s.
-- **Season by Season**: Year-by-year trajectory comparing their rise from 2019 to present.
-- **Honours & Records**: Curated list of notable achievements, trophies, and historical context.
+- **Head-to-Head** — Complete match log (2022–2026), filterable by Grand Slams, Masters 1000, surface, and finals only.
+- **Career Stats** — Dynamic comparison bars for titles, win %, prize money, and more.
+- **Surface Breakdown** — Detailed W-L records across Hard (Outdoor & Indoor), Clay, and Grass.
+- **Tournament Insights** — Performance at every Grand Slam, Masters 1000, ATP 500/250, and ATP Finals.
+- **Season by Season** — Year-by-year trajectory comparing their rise from 2019 to present.
+- **Honours & Records** — Curated list of trophies, achievements, and historical milestones.
 
-## Design System
+---
 
-- **Background Palette**: Deep space darks (`#0a0a0c`, `#111114`).
-- **Jannik Sinner Motif**: Electric blue (`#4f8ef7`) to symbolize ice/cool baseline dominance.
-- **Carlos Alcaraz Motif**: Bold orange (`#f97316`) representing Spanish clay and fiery shot-making. 
-- **Typography**: Clean, sans-serif readability powered by Google Fonts (Inter).
+## How Stats Stay Up to Date
+
+Stats are stored in [`data.json`](./data.json) and loaded by the page at runtime via `fetch()`.
+
+A **GitHub Actions** workflow ([`.github/workflows/update-stats.yml`](.github/workflows/update-stats.yml)) runs automatically **every 45 minutes**:
+
+```
+GitHub Actions (every 45 min)
+  → scripts/update_stats.py runs
+  → Pulls latest stats from Wikipedia (free, no API key)
+  → Updates data.json if anything changed
+  → Commits & pushes to GitHub
+  → Vercel detects new commit → redeploys in ~15 seconds
+```
+
+### What gets auto-updated
+
+| Field | Source |
+|---|---|
+| Current ATP Ranking | Wikipedia infobox |
+| Career W-L Record & Win % | Wikipedia infobox |
+| Total Titles | Wikipedia infobox |
+| Grand Slam count | Wikipedia career stats |
+| Prize Money | Wikipedia infobox |
+| Surface W-L (Hard / Clay / Grass / Indoor) | Wikipedia career stats |
+| Current season W-L & titles | Wikipedia career stats |
+| `meta.lastUpdated` timestamp | Auto-set on each change |
+
+### What must be updated manually
+
+Edit [`data.json`](./data.json) directly for:
+
+| Field | Why manual |
+|---|---|
+| `h2hMatches` | New matches need score, round, surface — not reliably scrapable |
+| `grandSlamTitles` | Specific slam name and year list |
+| `tournamentStats` | Per-tournament breakdown detail |
+| `records` | Notable historical records text |
+| `otherTrophies` | Honours / awards list |
+| Player profile (DOB, height, coach) | Static biographical info |
+
+### Triggering a manual update
+
+Go to the **Actions** tab on GitHub → select **"Update Stats"** → click **"Run workflow"**.
+
+---
+
+## Running the scraper locally
+
+Requires Python 3.10+ (no external packages needed — only stdlib):
+
+```bash
+# Normal run — updates data.json
+python scripts/update_stats.py
+
+# Dry run — shows what would change without saving
+python scripts/update_stats.py --dry
+```
+
+---
 
 ## Local Development
 
-Since the site relies on no external frameworks, dependencies, or build tools, getting started is trivial:
+The site is a static HTML/JS/JSON bundle — no build step required.
 
-1. Clone the repository: `git clone https://github.com/pushpitshukla28/sinnervsalcaraz.git`
-2. Open `index.html` in any modern web browser.
+```bash
+# Option 1: any static server (required for fetch() to work)
+npx serve .
 
-### Adding Player Sketches
+# Option 2: Python
+python -m http.server 3000
+```
 
-The Hero section supports custom player transparent image illustrations. To activate them:
-1. Create isolated character sketches or photos with transparent backgrounds.
-2. Name them `sinner.png` and `alcaraz.png`.
-3. Drop them directly into the root project folder alongside `index.html`. 
+Then open `http://localhost:3000`.
 
-The layout will automatically frame them and apply custom-colored drop shadow glows.
+> ⚠️  Opening `index.html` directly via `file://` will block the `fetch('data.json')` call. Always use a local server.
+
+### Adding player images
+
+The hero section supports transparent PNG character art:
+
+1. Name them `sinner.png` and `alcaraz.png`
+2. Drop them in the root folder alongside `index.html`
+
+The layout automatically applies the correct drop-shadow glow.
+
+---
+
+## Design System
+
+| Token | Value | Role |
+|---|---|---|
+| Background | `#0a0a0c`, `#111114` | Deep space darks |
+| Sinner accent | `#4f8ef7` | Electric blue |
+| Alcaraz accent | `#f97316` | Bold orange |
+| Typography | Inter (Google Fonts) | Clean sans-serif |
+
+---
 
 ## Deployment
 
-The project is linked to **Vercel** with GitHub integration.
-Pushing to the `master` branch will automatically trigger a new production rollout.
+Linked to **Vercel** with GitHub integration. Any push to `master` triggers an automatic production redeploy.
 
 ```bash
 git add .
@@ -48,5 +126,18 @@ git commit -m "Update stats"
 git push
 ```
 
-## Data Updates
-All player data is hardcoded as structured Javascript Objects within `<script>` tags at the bottom of `index.html`. To update their total titles or add the latest tournament result, simply modify the variables (e.g. `PLAYERS`, `H2H_MATCHES`, `SEASON_STATS`) inside the file.
+---
+
+## Project Structure
+
+```
+sinnervsalcaraz/
+├── index.html               # Full frontend (HTML + CSS + JS)
+├── data.json                # All stats — the single source of truth
+├── scripts/
+│   └── update_stats.py      # Auto-updater script (Wikipedia scraper)
+├── .github/
+│   └── workflows/
+│       └── update-stats.yml # GitHub Actions schedule (every 45 min)
+└── README.md
+```
