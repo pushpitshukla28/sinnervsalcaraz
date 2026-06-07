@@ -1,1909 +1,1095 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="light" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sinner vs Alcaraz — The Rivalry Defined</title>
-  <meta name="description"
-    content="Complete career stats comparison between Jannik Sinner and Carlos Alcaraz — head to head, surface records, Grand Slams, and every ATP title." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Sinner vs Alcaraz | ATP ELITE</title>
+  <meta name="description" content="Complete career stats comparison between Jannik Sinner and Carlos Alcaraz — head to head, surface records, Grand Slams, and every ATP title." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "dog-bone": "#F2E8CC",
+            "tennis-ball": "#99BD05",
+            "cool-grass": "#236130",
+            "on-primary": "#ffffff",
+            "background": "#F2E8CC",
+            "outline": "#71796f",
+            "secondary-fixed-dim": "#afd52b",
+            "primary": "#236130",
+            "primary-fixed-dim": "#94d699",
+            "on-secondary-fixed-variant": "#3d4d00",
+            "secondary-fixed": "#caf248",
+            "on-primary-fixed-variant": "#115223",
+            "surface-tint": "#2d6a38",
+            "on-tertiary-fixed": "#171e00",
+            "surface-container-highest": "#ece2c6",
+            "inverse-on-surface": "#faf0d4",
+            "on-secondary-container": "#576c00",
+            "surface-container-low": "#fdf3d7",
+            "primary-container": "#236130",
+            "tertiary-fixed-dim": "#afd52b",
+            "tertiary-container": "#495c00",
+            "inverse-primary": "#94d699",
+            "on-primary-fixed": "#002108",
+            "primary-fixed": "#b0f3b3",
+            "on-surface-variant": "#41493f",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#35301d",
+            "surface-container-high": "#f2e8cc",
+            "surface-bright": "#fff9ee",
+            "secondary-container": "#caf248",
+            "surface-variant": "#ece2c6",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#caf248",
+            "outline-variant": "#c0c9bd",
+            "on-surface": "#201b0a",
+            "surface": "#F2E8CC",
+            "surface-container": "#f8edd1",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#b3d82f",
+            "on-primary-container": "#98da9c",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#3d4d00",
+            "secondary": "#516600",
+            "error": "#ba1a1a",
+            "surface-dim": "#e3dabe",
+            "on-background": "#201b0a",
+            "tertiary": "#354300",
+            "on-secondary-fixed": "#171e00",
+            "on-error-container": "#93000a"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Epilogue"],
+            body: ["Work Sans"],
+            label: ["Work Sans"]
+          }
+        }
+      }
+    };
+  </script>
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --bg: #0a0a0c;
-      --bg2: #111114;
-      --bg3: #18181d;
-      --bg4: #1f1f26;
-      --border: rgba(255, 255, 255, 0.07);
-      --border2: rgba(255, 255, 255, 0.12);
-      --text: #e8e8f0;
-      --text2: #9090a8;
-      --text3: #5a5a72;
-      --sinner: #4f8ef7;
-      --sinner-dim: rgba(79, 142, 247, 0.12);
-      --sinner-glow: rgba(79, 142, 247, 0.25);
-      --alcaraz: #f97316;
-      --alcaraz-dim: rgba(249, 115, 22, 0.12);
-      --alcaraz-glow: rgba(249, 115, 22, 0.25);
-      --gold: #c8a84b;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* —— SCROLLBAR —— */
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--bg);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--bg4);
-      border-radius: 3px;
-    }
-
-    /* —— NAV —— */
-    #navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background: rgba(10, 10, 12, 0.92);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      height: 58px;
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      gap: 0;
+    /* ── STAT BARS ── */
+    .stat-bar-container {
       width: 100%;
-    }
-
-    .nav-brand {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      margin-right: 32px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .nav-brand .s {
-      color: var(--sinner);
-    }
-
-    .nav-brand .a {
-      color: var(--alcaraz);
-    }
-
-    .nav-brand .vs {
-      color: var(--text3);
-      font-weight: 400;
-      font-size: 11px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      flex: 1;
-      overflow-x: auto;
-    }
-
-    .nav-links::-webkit-scrollbar {
-      display: none;
-    }
-
-    .nav-link {
-      padding: 6px 14px;
+      height: 12px;
+      background-color: #ece2c6;
       border-radius: 6px;
-      font-size: 12.5px;
-      font-weight: 500;
-      color: var(--text2);
-      cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.2s;
-      border: 1px solid transparent;
-      text-decoration: none;
-    }
-
-    .nav-link:hover {
-      color: var(--text);
-      background: var(--bg3);
-    }
-
-    .nav-link.active {
-      color: var(--text);
-      background: var(--bg3);
-      border-color: var(--border2);
-    }
-
-    .nav-updated {
-      margin-left: auto;
-      font-size: 11px;
-      color: var(--text3);
-      white-space: nowrap;
-      padding-left: 16px;
-    }
-
-    /* —— MAIN —— */
-    main {
-      padding-top: 58px;
-    }
-
-    section {
-      min-height: auto;
-      padding: 64px 24px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    section:not(:last-child) {
-      border-bottom: 1px solid var(--border);
-    }
-
-    /* —— HERO —— */
-    #hero {
-      padding: 80px 24px 72px;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .hero-tag {
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text3);
-      font-weight: 600;
-      margin-bottom: 32px;
-    }
-
-    .hero-players {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 0;
-      width: 100%;
-      align-items: end;
-      margin-bottom: 56px;
-    }
-
-    .hero-player {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0;
-    }
-
-    .hero-player.sinner {
-      align-items: flex-end;
-    }
-
-    .hero-player.alcaraz {
-      align-items: flex-start;
-    }
-
-    .player-sketch {
-      width: 220px;
-      height: 300px;
       position: relative;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
+      overflow: visible;
     }
-
-    .player-sketch img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      filter: drop-shadow(0 0 40px var(--sinner-glow));
-    }
-
-    .player-sketch.alcaraz img {
-      filter: drop-shadow(0 0 40px var(--alcaraz-glow));
-    }
-
-    .player-sketch-placeholder {
-      width: 100%;
+    .stat-bar-fill {
+      background: #236130;
       height: 100%;
-      border: 1px dashed var(--border2);
-      border-radius: 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: var(--text3);
-      font-size: 11px;
-      text-align: center;
-      padding: 16px;
-    }
-
-    .player-sketch-placeholder .ph-icon {
-      font-size: 32px;
-      opacity: 0.4;
-    }
-
-    .hero-name {
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.1;
-      margin-bottom: 4px;
-    }
-
-    .hero-name.sinner {
-      color: var(--sinner);
-      text-align: right;
-    }
-
-    .hero-name.alcaraz {
-      color: var(--alcaraz);
-      text-align: left;
-    }
-
-    .hero-nat {
-      font-size: 12px;
-      color: var(--text3);
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .hero-nat.sinner {
-      text-align: right;
-    }
-
-    .hero-nat.alcaraz {
-      text-align: left;
-    }
-
-    .hero-vs-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      padding-bottom: 12px;
-      gap: 8px;
-    }
-
-    .hero-vs {
-      font-size: 13px;
-      color: var(--text3);
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
-    .hero-h2h-pill {
-      background: var(--bg3);
-      border: 1px solid var(--border2);
-      border-radius: 100px;
-      padding: 6px 18px;
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .hero-h2h-pill .sc {
-      font-size: 12px;
-      color: var(--text3);
-      font-weight: 500;
-    }
-
-    .hero-h2h-pill .sv {
-      color: var(--sinner);
-    }
-
-    .hero-h2h-pill .av {
-      color: var(--alcaraz);
-    }
-
-    /* —— HERO GLOW —— */
-    #hero {
+      border-radius: 6px;
+      width: 0%;
+      transition: width 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
       position: relative;
     }
-
-    #hero::before {
+    .tennis-ball-tracker {
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      box-shadow: inset -2px -2px 4px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.3);
+      opacity: 0;
+      transition: opacity 0.2s ease-in;
+      z-index: 10;
+      background-color: #d1f15a;
+      background-image:
+        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(0,0,0,0.05), transparent 80%);
+      overflow: hidden;
+    }
+    .tennis-ball-tracker::before,
+    .tennis-ball-tracker::after {
       content: '';
       position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: radial-gradient(ellipse 55% 40% at 20% 60%, rgba(79, 142, 247, 0.06) 0%, transparent 70%),
-        radial-gradient(ellipse 55% 40% at 80% 60%, rgba(249, 115, 22, 0.06) 0%, transparent 70%);
-      z-index: 0;
-    }
-
-    #hero>* {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-stats-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-      width: 100%;
-      background: var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-    }
-
-    .hero-stat {
-      background: var(--bg2);
-      padding: 20px 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .hero-stat-label {
-      font-size: 10px;
-      color: var(--text3);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 600;
-    }
-
-    .hero-stat-values {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 2px;
-    }
-
-    .hero-stat-val {
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    .hero-stat-val.s {
-      color: var(--sinner);
-    }
-
-    .hero-stat-val.a {
-      color: var(--alcaraz);
-    }
-
-    .hero-stat-sep {
-      font-size: 12px;
-      color: var(--text3);
-    }
-
-    /* —— SECTION HEADER —— */
-    .section-header {
-      margin-bottom: 36px;
-    }
-
-    .section-tag {
-      font-size: 10.5px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text3);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .section-title {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-
-    /* —— PLAYER LABELS —— */
-    .player-labels {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      padding: 0 2px;
-    }
-
-    .player-label {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .player-label.s {
-      color: var(--sinner);
-    }
-
-    .player-label.a {
-      color: var(--alcaraz);
-    }
-
-    /* —— STAT BAR —— */
-    .stat-bar-group {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .stat-row {
-      display: grid;
-      grid-template-columns: 80px 1fr 140px 1fr 80px;
-      align-items: center;
-      gap: 10px;
-      padding: 11px 14px;
-      border-radius: 8px;
-      transition: background 0.15s;
-    }
-
-    .stat-row:hover {
-      background: var(--bg3);
-    }
-
-    .stat-val-left {
-      text-align: right;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--sinner);
-    }
-
-    .stat-val-right {
-      text-align: left;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--alcaraz);
-    }
-
-    .stat-name {
-      text-align: center;
-      font-size: 11.5px;
-      color: var(--text2);
-      font-weight: 500;
-    }
-
-    .bar-track {
-      height: 6px;
-      border-radius: 100px;
-      background: var(--bg4);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .bar-fill-sinner {
-      height: 100%;
-      border-radius: 100px;
-      background: var(--sinner);
-      transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .bar-track-right {
-      height: 6px;
-      border-radius: 100px;
-      background: var(--bg4);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .bar-fill-alcaraz {
-      height: 100%;
-      border-radius: 100px;
-      background: var(--alcaraz);
-      transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .bar-wrap {
-      display: flex;
-      gap: 3px;
-      width: 100%;
-    }
-
-    .bar-wrap .bar-track {
-      flex: 1;
-    }
-
-    /* —— CATEGORY DIVIDER —— */
-    .cat-divider {
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text3);
-      font-weight: 600;
-      padding: 20px 14px 8px;
-      border-top: 1px solid var(--border);
-      margin-top: 8px;
-    }
-
-    .cat-divider:first-child {
-      border-top: none;
-      padding-top: 8px;
-    }
-
-    /* —— TABS —— */
-    .tab-bar {
-      display: flex;
-      gap: 4px;
-      margin-bottom: 28px;
-      flex-wrap: wrap;
-    }
-
-    .tab-btn {
-      padding: 7px 16px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--text2);
-      transition: all 0.2s;
-    }
-
-    .tab-btn:hover {
-      background: var(--bg3);
-      color: var(--text);
-    }
-
-    .tab-btn.active {
-      background: var(--bg3);
-      color: var(--text);
-      border-color: var(--border2);
-    }
-
-    .tab-content {
-      display: none;
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
-    /* —— H2H MATCH TABLE —— */
-    .match-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .match-table th {
-      text-align: left;
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text3);
-      font-weight: 600;
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .match-table td {
-      padding: 12px 14px;
-      font-size: 13px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-    }
-
-    .match-table tr:hover td {
-      background: var(--bg3);
-    }
-
-    .match-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .winner-pill {
-      display: inline-block;
-      padding: 2px 10px;
-      border-radius: 100px;
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    .winner-pill.sinner {
-      background: var(--sinner-dim);
-      color: var(--sinner);
-    }
-
-    .winner-pill.alcaraz {
-      background: var(--alcaraz-dim);
-      color: var(--alcaraz);
-    }
-
-    .surface-pill {
-      display: inline-block;
-      padding: 2px 9px;
-      border-radius: 100px;
-      font-size: 11px;
-      font-weight: 600;
-    }
-
-    .surface-pill.hard {
-      background: rgba(100, 180, 255, 0.1);
-      color: #64b4ff;
-    }
-
-    .surface-pill.clay {
-      background: rgba(210, 130, 70, 0.15);
-      color: #d28246;
-    }
-
-    .surface-pill.grass {
-      background: rgba(80, 190, 100, 0.12);
-      color: #50be64;
-    }
-
-    .surface-pill.indoor {
-      background: rgba(180, 140, 255, 0.12);
-      color: #b48cff;
-    }
-
-    .round-text {
-      color: var(--text2);
-      font-size: 12px;
-    }
-
-    /* —— PROFILE GRID —— */
-    .profile-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-    }
-
-    .profile-col {
-      background: var(--bg2);
-      border-radius: 12px;
-      padding: 28px;
-    }
-
-    .profile-col.sinner-col {
-      border-top: 2px solid var(--sinner);
-    }
-
-    .profile-col.alcaraz-col {
-      border-top: 2px solid var(--alcaraz);
-    }
-
-    .profile-player-name {
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .profile-player-name.s {
-      color: var(--sinner);
-    }
-
-    .profile-player-name.a {
-      color: var(--alcaraz);
-    }
-
-    .profile-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 9px 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 13px;
-    }
-
-    .profile-row:last-child {
-      border-bottom: none;
-    }
-
-    .profile-key {
-      color: var(--text2);
-    }
-
-    .profile-val {
-      font-weight: 600;
-    }
-
-    /* —— CARD GRID —— */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2px;
-    }
-
-    .stat-card {
-      background: var(--bg2);
-      border-radius: 12px;
-      padding: 24px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .stat-card-label {
-      font-size: 10.5px;
-      color: var(--text3);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .stat-card-vals {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .stat-card-val {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .stat-card-player {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .stat-card-player.s {
-      color: var(--sinner);
-    }
-
-    .stat-card-player.a {
-      color: var(--alcaraz);
-    }
-
-    .stat-card-num {
-      font-size: 18px;
-      font-weight: 800;
-    }
-
-    /* —— SEASON TABLE —— */
-    .season-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .season-table th {
-      text-align: center;
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text3);
-      font-weight: 600;
-      padding: 10px 10px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .season-table th:first-child {
-      text-align: left;
-    }
-
-    .season-table td {
-      padding: 11px 10px;
-      font-size: 13px;
-      text-align: center;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-    }
-
-    .season-table td:first-child {
-      text-align: left;
-      font-weight: 700;
-    }
-
-    .season-table tr:hover td {
-      background: var(--bg3);
-    }
-
-    .season-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .cell-s {
-      color: var(--sinner);
-      font-weight: 700;
-    }
-
-    .cell-a {
-      color: var(--alcaraz);
-      font-weight: 700;
-    }
-
-    .cell-dim {
-      color: var(--text3);
-    }
-
-    .season-year-row td {
-      color: var(--text2);
-    }
-
-    .season-pair {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-    }
-
-    .season-pair-s {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--sinner);
-    }
-
-    .season-pair-a {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--alcaraz);
-    }
-
-    /* —— HONOUR GRID —— */
-    .honour-section {
-      margin-bottom: 40px;
-    }
-
-    .honour-title {
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 16px;
-      color: var(--text2);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .honour-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-    }
-
-    .honour-col {
-      background: var(--bg2);
-      border-radius: 10px;
-      padding: 20px;
-    }
-
-    .honour-col-name {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 14px;
-    }
-
-    .honour-col-name.s {
-      color: var(--sinner);
-    }
-
-    .honour-col-name.a {
-      color: var(--alcaraz);
-    }
-
-    .honour-item {
-      padding: 8px 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 13px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .honour-item:last-child {
-      border-bottom: none;
-    }
-
-    .honour-item-year {
-      font-size: 11px;
-      color: var(--text3);
-      font-weight: 600;
-    }
-
-    /* —— RECORDS BOX —— */
-    .records-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2px;
-    }
-
-    .record-item {
-      background: var(--bg2);
-      border-radius: 10px;
-      padding: 20px;
-      border-left: 3px solid var(--border2);
-    }
-
-    .record-item.s {
-      border-left-color: var(--sinner);
-    }
-
-    .record-item.a {
-      border-left-color: var(--alcaraz);
-    }
-
-    .record-item.both {
-      border-left-color: var(--gold);
-    }
-
-    .record-item-who {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 6px;
-    }
-
-    .record-item-who.s {
-      color: var(--sinner);
-    }
-
-    .record-item-who.a {
-      color: var(--alcaraz);
-    }
-
-    .record-item-who.both {
-      color: var(--gold);
-    }
-
-    .record-item-text {
-      font-size: 13px;
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    /* —— H2H SUMMARY STRIP —— */
-    .h2h-summary {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 2px;
-      margin-bottom: 36px;
-    }
-
-    .h2h-card {
-      background: var(--bg2);
-      border-radius: 10px;
-      padding: 16px 14px;
-      text-align: center;
-    }
-
-    .h2h-card-label {
-      font-size: 10px;
-      color: var(--text3);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .h2h-card-scores {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .h2h-card-s {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--sinner);
-    }
-
-    .h2h-card-a {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--alcaraz);
-    }
-
-    .h2h-card-sep {
-      font-size: 12px;
-      color: var(--text3);
-      font-weight: 600;
-    }
-
-    .h2h-leader {
-      font-size: 10px;
-      color: var(--text3);
-      margin-top: 4px;
-    }
-
-    .h2h-leader.s {
-      color: var(--sinner);
-    }
-
-    .h2h-leader.a {
-      color: var(--alcaraz);
-    }
-
-    .h2h-leader.tied {
-      color: var(--text3);
-    }
-
-    /* —— GS TABLE —— */
-    .gs-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-    }
-
-    .gs-table th {
-      text-align: left;
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text3);
-      font-weight: 600;
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .gs-table td {
-      padding: 10px 12px;
-      font-size: 13px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-    }
-
-    .gs-table tr:hover td {
-      background: var(--bg3);
-    }
-
-    .gs-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .gs-val {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    .gs-w {
-      font-weight: 800;
-      color: var(--text);
-    }
-
-    .gs-f {
-      color: var(--text3);
-      font-size: 12px;
-    }
-
-    .gs-s {
-      color: var(--sinner);
-      font-weight: 700;
-    }
-
-    .gs-a {
-      color: var(--alcaraz);
-      font-weight: 700;
-    }
-
-    /* —— FOOTER —— */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 32px 24px;
-      text-align: center;
-      font-size: 12px;
-      color: var(--text3);
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    footer a {
-      color: var(--text2);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--text);
-    }
-
-    /* —— RESPONSIVE —— */
-    @media (max-width: 768px) {
-      .hero-players {
-        grid-template-columns: 1fr auto 1fr;
-        gap: 8px;
-      }
-
-      .player-sketch {
-        width: 130px;
-        height: 180px;
-      }
-
-      .hero-name {
-        font-size: 18px;
-      }
-
-      .hero-stats-strip {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .stat-row {
-        grid-template-columns: 60px 1fr 100px 1fr 60px;
-      }
-
-      .profile-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .honour-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .season-table {
-        font-size: 11px;
-      }
-
-      .season-table td,
-      .season-table th {
-        padding: 8px 6px;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .stat-row {
-        grid-template-columns: 50px 1fr 80px 1fr 50px;
-        font-size: 12px;
-      }
-
-      .hero-h2h-pill {
-        font-size: 16px;
-      }
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1.5px solid #ffffff;
+      box-sizing: border-box;
+      opacity: 0.8;
+    }
+    .tennis-ball-tracker::before { top: -5px; left: -5px; }
+    .tennis-ball-tracker::after  { bottom: -5px; right: -5px; }
+    .stat-bar-fill.animate .tennis-ball-tracker { opacity: 1; }
+
+
+    /* ── RTL BAR (Alcaraz side) ── */
+    .rtl-bar { transform: scaleX(-1); }
+
+    /* ── EDITORIAL HELPERS ── */
+    .editorial-border       { border: 2px solid #236130; }
+    .editorial-border-bottom{ border-bottom: 2px solid #236130; }
+    .editorial-border-top   { border-top: 2px solid #236130; }
+
+    /* ══════════════════════════════════
+       SCROLL REVEAL ANIMATIONS
+    ══════════════════════════════════ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* staggered children */
+    .stagger-children > * {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .stagger-children.visible > *:nth-child(1)  { opacity:1; transform:none; transition-delay:0s; }
+    .stagger-children.visible > *:nth-child(2)  { opacity:1; transform:none; transition-delay:0.06s; }
+    .stagger-children.visible > *:nth-child(3)  { opacity:1; transform:none; transition-delay:0.12s; }
+    .stagger-children.visible > *:nth-child(4)  { opacity:1; transform:none; transition-delay:0.18s; }
+    .stagger-children.visible > *:nth-child(5)  { opacity:1; transform:none; transition-delay:0.24s; }
+    .stagger-children.visible > *:nth-child(6)  { opacity:1; transform:none; transition-delay:0.30s; }
+    .stagger-children.visible > *:nth-child(7)  { opacity:1; transform:none; transition-delay:0.36s; }
+    .stagger-children.visible > *:nth-child(8)  { opacity:1; transform:none; transition-delay:0.42s; }
+    .stagger-children.visible > *:nth-child(n+9){ opacity:1; transform:none; transition-delay:0.48s; }
+
+    /* slide-in from left / right */
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-32px);
+      transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(32px);
+      transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-left.visible,
+    .reveal-right.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── COUNTER number animation ── */
+    .counter-val { display: inline-block; }
+
+    /* ── SURFACE PILL ── */
+    .surf-hard   { background: rgba(100,180,255,0.18); color:#1a6fa8; }
+    .surf-clay   { background: rgba(210,130,70,0.18);  color:#a0521a; }
+    .surf-grass  { background: rgba(80,190,100,0.16);  color:#1a6b30; }
+    .surf-indoor { background: rgba(160,130,255,0.16); color:#5a3ea8; }
+
+    /* ── TAB ACTIVE ── */
+    .tab-active { background:#236130 !important; color:#F2E8CC !important; }
+
+    /* ── NAV LINK active ── */
+    nav a.nav-active { border-bottom-color: #236130 !important; opacity:1 !important; }
+
+    /* HERO page — start visible (it's above the fold) */
+    #overview .reveal,
+    #overview .reveal-left,
+    #overview .reveal-right,
+    #overview .stagger-children > * {
+      opacity: 1;
+      transform: none;
     }
   </style>
 </head>
+<body class="bg-dog-bone font-body text-cool-grass antialiased min-h-screen selection:bg-tennis-ball selection:text-cool-grass">
 
-<body>
-
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <div class="nav-brand">
-        <span class="s">Sinner</span>
-        <span class="vs">vs</span>
-        <span class="a">Alcaraz</span>
-      </div>
-      <div class="nav-links">
-        <a class="nav-link active" href="#hero" id="nav-hero">Overview</a>
-        <a class="nav-link" href="#h2h" id="nav-h2h">Head to Head</a>
-        <a class="nav-link" href="#career" id="nav-career">Career Stats</a>
-        <a class="nav-link" href="#surface" id="nav-surface">Surfaces</a>
-        <a class="nav-link" href="#tournaments" id="nav-tournaments">Tournaments</a>
-        <a class="nav-link" href="#seasons" id="nav-seasons">Season by Season</a>
-        <a class="nav-link" href="#honours" id="nav-honours">Honours</a>
-      </div>
-      <div class="nav-updated">Updated Apr 2026</div>
+<!-- ═══ TOP NAV ═══ -->
+<header class="top-0 sticky z-50 bg-dog-bone border-b-2 border-cool-grass" id="site-header">
+  <div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-8">
+      <a class="text-2xl font-black italic text-cool-grass font-headline uppercase tracking-tighter hover:opacity-80 transition-opacity" href="#">
+        COURT ARCHIVE
+      </a>
+      <nav class="hidden md:flex items-center gap-6 mt-1" id="main-nav">
+        <a class="nav-link border-b-4 border-cool-grass pb-1 font-headline tracking-tighter uppercase font-bold text-sm hover:opacity-80 transition-opacity" href="#overview">Overview</a>
+        <a class="nav-link text-cool-grass/70 font-headline tracking-tighter uppercase font-bold text-sm hover:text-cool-grass transition-colors" href="#head-to-head">Head-to-Head</a>
+        <a class="nav-link text-cool-grass/70 font-headline tracking-tighter uppercase font-bold text-sm hover:text-cool-grass transition-colors" href="#career-stats">Career Stats</a>
+        <a class="nav-link text-cool-grass/70 font-headline tracking-tighter uppercase font-bold text-sm hover:text-cool-grass transition-colors" href="#surfaces">Surfaces</a>
+        <a class="nav-link text-cool-grass/70 font-headline tracking-tighter uppercase font-bold text-sm hover:text-cool-grass transition-colors" href="#season">Season</a>
+        <a class="nav-link text-cool-grass/70 font-headline tracking-tighter uppercase font-bold text-sm hover:text-cool-grass transition-colors" href="#honours">Honours</a>
+      </nav>
     </div>
-  </nav>
+    <div class="text-xs font-body text-cool-grass/50 uppercase tracking-widest" id="nav-updated">Updated Apr 2026</div>
+  </div>
+</header>
 
-  <main>
+<div class="max-w-screen-2xl mx-auto w-full">
+<main class="p-6 lg:p-12 space-y-24 w-full bg-dog-bone">
 
-    <!-- ===================== HERO ===================== -->
-    <div id="hero" style="padding: 80px 24px 0; max-width: 1200px; margin: 0 auto;">
-      <div class="hero-tag">The Defining Rivalry of Modern Tennis</div>
-      <div class="hero-players">
-        <!-- SINNER -->
-        <div class="hero-player sinner">
-          <div class="player-sketch" id="sinner-sketch">
-            <img src="sinner.png" alt="Jannik Sinner"
-              onerror="this.parentElement.innerHTML='<div class=\'player-sketch-placeholder\'><div class=\'ph-icon\'>[ ]</div><span>Drop sinner.png<br>into project folder</span></div>'" />
-          </div>
-          <div class="hero-name sinner">Jannik Sinner</div>
-          <div class="hero-nat sinner">Italy — World No. 1</div>
-        </div>
-        <!-- VS -->
-        <div class="hero-vs-col">
-          <div class="hero-vs">vs</div>
-          <div class="hero-h2h-pill">
-            <span class="sv">7</span>
-            <span class="sc">–</span>
-            <span class="av">10</span>
-          </div>
-          <div style="font-size:10px; color:var(--text3); margin-top:4px; text-align:center;">ATP H2H Record</div>
-        </div>
-        <!-- ALCARAZ -->
-        <div class="hero-player alcaraz">
-          <div class="player-sketch alcaraz" id="alcaraz-sketch">
-            <img src="alcaraz.png" alt="Carlos Alcaraz"
-              onerror="this.parentElement.innerHTML='<div class=\'player-sketch-placeholder\'><div class=\'ph-icon\'>[ ]</div><span>Drop alcaraz.png<br>into project folder</span></div>'" />
-          </div>
-          <div class="hero-name alcaraz">Carlos Alcaraz</div>
-          <div class="hero-nat alcaraz">Spain — World No. 2</div>
-        </div>
-      </div>
+  <!-- ═══════════════════════════════════════
+       SECTION 1 · HERO
+  ═══════════════════════════════════════ -->
+  <section class="relative editorial-border-bottom pb-16 pt-8" id="overview">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end min-h-[600px]">
 
-      <!-- HERO STATS STRIP -->
-      <div class="hero-stats-strip">
-        <div class="hero-stat">
-          <div class="hero-stat-label">Grand Slams</div>
-          <div class="hero-stat-values">
-            <span class="hero-stat-val s">4</span>
-            <span class="hero-stat-sep">–</span>
-            <span class="hero-stat-val a">7</span>
-          </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">Total Titles</div>
-          <div class="hero-stat-values">
-            <span class="hero-stat-val s">27</span>
-            <span class="hero-stat-sep">–</span>
-            <span class="hero-stat-val a">26</span>
-          </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">Career W-L</div>
-          <div class="hero-stat-values">
-            <span class="hero-stat-val s">345–88</span>
-            <span class="hero-stat-sep">/</span>
-            <span class="hero-stat-val a">301–68</span>
-          </div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-label">Prize Money</div>
-          <div class="hero-stat-values">
-            <span class="hero-stat-val s" style="font-size:15px;">$62M+</span>
-            <span class="hero-stat-sep">–</span>
-            <span class="hero-stat-val a" style="font-size:15px;">$64.9M</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===================== HEAD TO HEAD ===================== -->
-    <section id="h2h">
-      <div class="section-header">
-        <div class="section-tag">Face to Face</div>
-        <div class="section-title">Head to Head</div>
-      </div>
-
-      <!-- H2H SUMMARY CARDS -->
-      <div class="h2h-summary" id="h2h-summary"></div>
-
-      <!-- MATCH LOG -->
-      <div class="tab-bar">
-        <button class="tab-btn active" data-tab="h2h-all">All Matches</button>
-        <button class="tab-btn" data-tab="h2h-gs">Grand Slams</button>
-        <button class="tab-btn" data-tab="h2h-m1000">Masters 1000</button>
-        <button class="tab-btn" data-tab="h2h-hard">Hard Court</button>
-        <button class="tab-btn" data-tab="h2h-clay">Clay</button>
-        <button class="tab-btn" data-tab="h2h-grass">Grass</button>
-        <button class="tab-btn" data-tab="h2h-finals">Finals Only</button>
-      </div>
-      <div id="h2h-table-container"></div>
-    </section>
-
-    <!-- ===================== CAREER STATS ===================== -->
-    <section id="career">
-      <div class="section-header">
-        <div class="section-tag">All Time</div>
-        <div class="section-title">Career Statistics</div>
-      </div>
-
-      <!-- PROFILE CARDS -->
-      <div class="profile-grid" style="margin-bottom: 32px;" id="profile-grid"></div>
-
-      <!-- STAT BARS -->
-      <div class="player-labels">
-        <span class="player-label s">Sinner</span>
-        <span class="player-label a">Alcaraz</span>
-      </div>
-      <div class="stat-bar-group" id="career-bars"></div>
-    </section>
-
-    <!-- ===================== SURFACE STATS ===================== -->
-    <section id="surface">
-      <div class="section-header">
-        <div class="section-tag">Court Breakdown</div>
-        <div class="section-title">Performance by Surface</div>
-      </div>
-
-      <div class="tab-bar">
-        <button class="tab-btn active" data-tab="surf-all">All Surfaces</button>
-        <button class="tab-btn" data-tab="surf-hard">Hard (Outdoor)</button>
-        <button class="tab-btn" data-tab="surf-indoor">Hard (Indoor)</button>
-        <button class="tab-btn" data-tab="surf-clay">Clay</button>
-        <button class="tab-btn" data-tab="surf-grass">Grass</button>
-      </div>
-      <div id="surface-content"></div>
-    </section>
-
-    <!-- ===================== TOURNAMENT STATS ===================== -->
-    <section id="tournaments">
-      <div class="section-header">
-        <div class="section-tag">By Tournament Level</div>
-        <div class="section-title">Tournament Statistics</div>
-      </div>
-
-      <div class="tab-bar">
-        <button class="tab-btn active" data-tab="tourn-gs">Grand Slams</button>
-        <button class="tab-btn" data-tab="tourn-m1000">Masters 1000</button>
-        <button class="tab-btn" data-tab="tourn-500">ATP 500</button>
-        <button class="tab-btn" data-tab="tourn-250">ATP 250</button>
-        <button class="tab-btn" data-tab="tourn-finals-atp">ATP Finals</button>
-        <button class="tab-btn" data-tab="tourn-combined">Combined View</button>
-      </div>
-      <div id="tournament-content"></div>
-    </section>
-
-    <!-- ===================== SEASON STATS ===================== -->
-    <section id="seasons">
-      <div class="section-header">
-        <div class="section-tag">Year by Year</div>
-        <div class="section-title">Season Statistics</div>
-      </div>
-      <div id="season-content"></div>
-    </section>
-
-    <!-- ===================== HONOURS ===================== -->
-    <section id="honours">
-      <div class="section-header">
-        <div class="section-tag">Trophies and Awards</div>
-        <div class="section-title">Honours</div>
-      </div>
-      <div id="honours-content"></div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>All statistics are ATP Tour level only. Last updated April 2026.</p>
-    <p style="margin-top:6px;">Stats sourced from ATP Tour, Wikipedia, Olympics.com, and official tournament records.
-    </p>
-  </footer>
-
-  <script>
-    // ================================================================
-    // DATA — loaded from data.json
-    // ================================================================
-
-    // These will be populated after fetch() completes
-    let PLAYERS, H2H_MATCHES, SURFACE_STATS, TOURNAMENT_STATS,
-        SEASON_STATS, GRAND_SLAM_TITLES, RECORDS, OTHER_TROPHIES;
-
-
-    // ================================================================
-    // RENDER FUNCTIONS
-    // ================================================================
-
-    function pct(w, l) { return ((w / (w + l)) * 100).toFixed(1); }
-    function barWidth(valA, valB) {
-      const max = Math.max(valA, valB);
-      if (max === 0) return [50, 50];
-      return [(valA / max) * 100, (valB / max) * 100];
-    }
-
-    function renderStatBar(label, sVal, aVal, sDisplay, aDisplay) {
-      const [sw, aw] = barWidth(parseFloat(sVal), parseFloat(aVal));
-      return `
-    <div class="stat-row">
-      <div class="stat-val-left">${sDisplay !== undefined ? sDisplay : sVal}</div>
-      <div class="bar-track">
-        <div class="bar-fill-sinner" style="width:${sw}%"></div>
-      </div>
-      <div class="stat-name">${label}</div>
-      <div class="bar-track-right">
-        <div class="bar-fill-alcaraz" style="width:${aw}%"></div>
-      </div>
-      <div class="stat-val-right">${aDisplay !== undefined ? aDisplay : aVal}</div>
-    </div>`;
-    }
-
-    // H2H SUMMARY
-    function renderH2HSummary() {
-      const matches = H2H_MATCHES;
-      const calc = (filter) => {
-        const filtered = filter ? matches.filter(filter) : matches;
-        const sw = filtered.filter(m => m.winner === 'sinner').length;
-        const aw = filtered.filter(m => m.winner === 'alcaraz').length;
-        return { sw, aw, total: filtered.length };
-      };
-
-      const cats = [
-        { label: 'Overall', data: calc() },
-        { label: 'Grand Slams', data: calc(m => m.level === 'gs') },
-        { label: 'Masters 1000', data: calc(m => m.level === 'M1000') },
-        { label: 'Finals Only', data: calc(m => m.round === 'Final') },
-        { label: 'Indoor Hard', data: calc(m => m.surface === 'indoor') },
-        { label: 'Hard Court', data: calc(m => m.surface === 'hard' || m.surface === 'indoor') },
-        { label: 'Clay', data: calc(m => m.surface === 'clay') },
-        { label: 'Grass', data: calc(m => m.surface === 'grass') },
-        { label: 'Indoor Hard', data: calc(m => m.surface === 'indoor') },
-      ];
-
-      const container = document.getElementById('h2h-summary');
-      container.innerHTML = cats.map(({ label, data }) => {
-        const leader = data.sw > data.aw ? 'Sinner leads' : data.aw > data.sw ? 'Alcaraz leads' : 'Tied';
-        const leaderClass = data.sw > data.aw ? 's' : data.aw > data.sw ? 'a' : 'tied';
-        return `
-      <div class="h2h-card">
-        <div class="h2h-card-label">${label}</div>
-        <div class="h2h-card-scores">
-          <span class="h2h-card-s">${data.sw}</span>
-          <span class="h2h-card-sep">–</span>
-          <span class="h2h-card-a">${data.aw}</span>
-        </div>
-        <div class="h2h-leader ${leaderClass}">${leader}</div>
-      </div>`;
-      }).join('');
-    }
-
-    // H2H TABLE
-    function renderMatchTable(matches) {
-      if (!matches.length) return '<p style="color:var(--text3);font-size:13px;padding:20px 0;">No matches in this category.</p>';
-      return `
-    <div style="overflow-x:auto;">
-    <table class="match-table">
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Tournament</th>
-          <th>Round</th>
-          <th>Surface</th>
-          <th>Winner</th>
-          <th>Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${matches.map(m => `
-          <tr>
-            <td style="color:var(--text3);font-weight:600;">${m.year}</td>
-            <td>${m.tournament}</td>
-            <td class="round-text">${m.round}</td>
-            <td><span class="surface-pill ${m.surface}">${m.surface.charAt(0).toUpperCase() + m.surface.slice(1)}</span></td>
-            <td><span class="winner-pill ${m.winner}">${m.winner === 'sinner' ? 'Sinner' : 'Alcaraz'}</span></td>
-            <td style="font-family: monospace; font-size:12px; color:var(--text2);">${m.score}</td>
-          </tr>`).join('')}
-      </tbody>
-    </table>
-    </div>`;
-    }
-
-    function renderH2HTableAll(tabId) {
-      const filters = {
-        'h2h-all': null,
-        'h2h-gs': m => m.level === 'gs',
-        'h2h-m1000': m => m.level === 'M1000',
-        'h2h-hard': m => m.surface === 'hard',
-        'h2h-clay': m => m.surface === 'clay',
-        'h2h-grass': m => m.surface === 'grass',
-        'h2h-finals': m => m.round === 'Final',
-      };
-      const filter = filters[tabId];
-      const matches = filter ? H2H_MATCHES.filter(filter) : H2H_MATCHES;
-      return renderMatchTable(matches);
-    }
-
-    // PROFILE GRID
-    function renderProfileGrid() {
-      const s = PLAYERS.sinner;
-      const a = PLAYERS.alcaraz;
-      const rows = [
-        ['Full Name', s.fullName, a.fullName],
-        ['Date of Birth', s.dob, a.dob],
-        ['Age', s.age, a.age],
-        ['Nationality', s.nationality, a.nationality],
-        ['Birthplace', s.birthplace, a.birthplace],
-        ['Height', s.height, a.height],
-        ['Plays', s.plays, a.plays],
-        ['Coach', s.coach, a.coach],
-        ['Turned Pro', s.turnedPro, a.turnedPro],
-        ['Current Ranking', `No. ${s.currentRanking}`, `No. ${a.currentRanking}`],
-        ['Career-High Ranking', `No. ${s.careerHighRanking}`, `No. ${a.careerHighRanking}`],
-        ['First No. 1', s.firstNo1, a.firstNo1],
-        ['Year-End No. 1', s.yearEndNo1.join(', '), a.yearEndNo1.join(', ')],
-      ];
-      document.getElementById('profile-grid').innerHTML = `
-    <div class="profile-col sinner-col">
-      <div class="profile-player-name s">Jannik Sinner</div>
-      ${rows.map(r => `<div class="profile-row"><span class="profile-key">${r[0]}</span><span class="profile-val">${r[1]}</span></div>`).join('')}
-    </div>
-    <div class="profile-col alcaraz-col">
-      <div class="profile-player-name a">Carlos Alcaraz</div>
-      ${rows.map(r => `<div class="profile-row"><span class="profile-key">${r[0]}</span><span class="profile-val">${r[2]}</span></div>`).join('')}
-    </div>`;
-    }
-
-    // CAREER BARS
-    function renderCareerBars() {
-      const s = PLAYERS.sinner;
-      const a = PLAYERS.alcaraz;
-      const bars = [
-        { label: 'Win %', sv: s.winPct, av: a.winPct, sd: s.winPct + '%', ad: a.winPct + '%' },
-        { label: 'Total Titles', sv: s.totalTitles, av: a.totalTitles },
-        { label: 'Grand Slams', sv: s.grandSlams, av: a.grandSlams },
-        { label: 'ATP Finals', sv: s.atpFinals, av: a.atpFinals },
-        { label: 'Masters 1000', sv: s.masters1000, av: a.masters1000 },
-        { label: 'ATP 500', sv: s.atp500, av: a.atp500 },
-        { label: 'ATP 250', sv: s.atp250, av: a.atp250 },
-        { label: 'Matches Won', sv: s.careerRecord.w, av: a.careerRecord.w },
-        { label: 'Matches Lost', sv: s.careerRecord.l, av: a.careerRecord.l },
-      ];
-      document.getElementById('career-bars').innerHTML = bars.map(b =>
-        renderStatBar(b.label, b.sv, b.av, b.sd, b.ad)
-      ).join('');
-    }
-
-    // SURFACE CONTENT
-    function renderSurfaceContent(tabId) {
-      const surfaces = tabId === 'surf-all'
-        ? Object.values(SURFACE_STATS)
-        : [SURFACE_STATS[tabId.replace('surf-', '')]];
-
-      let html = '';
-      surfaces.forEach(surf => {
-        const s = surf.sinner, a = surf.alcaraz;
-        html += `
-      <div style="margin-bottom:28px;">
-        <div class="cat-divider">${surf.label}</div>
-        <div class="player-labels"><span class="player-label s">Sinner</span><span class="player-label a">Alcaraz</span></div>
-        <div class="stat-bar-group">
-          ${renderStatBar('Win %', s.pct, a.pct, s.pct + '%', a.pct + '%')}
-          ${renderStatBar('Wins', s.w, a.w)}
-          ${renderStatBar('Losses', s.l, a.l, '-' + s.l, '-' + a.l)}
-          ${renderStatBar('Titles', s.titles, a.titles)}
-          ${renderStatBar('Win-Loss', s.w + s.l, a.w + a.l, s.w + '-' + s.l, a.w + '-' + a.l)}
-        </div>
-      </div>`;
-      });
-      document.getElementById('surface-content').innerHTML = html;
-    }
-
-    // TOURNAMENT CONTENT
-    function renderTournamentContent(tabId) {
-      const el = document.getElementById('tournament-content');
-
-      if (tabId === 'tourn-gs') {
-        const slams = TOURNAMENT_STATS.gs;
-        let html = `<div style="overflow-x:auto;"><table class="gs-table"><thead><tr>
-      <th>Grand Slam</th><th>Surface</th>
-      <th style="color:var(--sinner);">Sinner Titles</th><th style="color:var(--sinner);">Sinner Finals</th>
-      <th style="color:var(--alcaraz);">Alcaraz Titles</th><th style="color:var(--alcaraz);">Alcaraz Finals</th>
-    </tr></thead><tbody>`;
-        Object.values(slams).forEach(gs => {
-          html += `<tr>
-        <td style="font-weight:600;">${gs.label}</td>
-        <td><span class="surface-pill ${gs.surface}">${gs.surface.charAt(0).toUpperCase() + gs.surface.slice(1)}</span></td>
-        <td class="gs-s">${gs.sinner.titles}</td><td style="color:var(--text2);">${gs.sinner.finals}</td>
-        <td class="gs-a">${gs.alcaraz.titles}</td><td style="color:var(--text2);">${gs.alcaraz.finals}</td>
-      </tr>`;
-        });
-        const totals = Object.values(slams).reduce((acc, gs) => {
-          acc.st += gs.sinner.titles; acc.sf += gs.sinner.finals;
-          acc.at += gs.alcaraz.titles; acc.af += gs.alcaraz.finals;
-          return acc;
-        }, { st: 0, sf: 0, at: 0, af: 0 });
-        html += `<tr style="border-top:1px solid var(--border);"><td style="color:var(--text3);font-weight:600;">Total</td><td></td>
-      <td class="gs-s">${totals.st}</td><td style="color:var(--text2);">${totals.sf}</td>
-      <td class="gs-a">${totals.at}</td><td style="color:var(--text2);">${totals.af}</td></tr>`;
-        html += '</tbody></table></div>';
-
-        // GS title detail list
-        html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:24px;">';
-        ['sinner', 'alcaraz'].forEach(p => {
-          const titles = GRAND_SLAM_TITLES[p];
-          html += `<div style="background:var(--bg2);border-radius:10px;padding:20px;">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--${p});margin-bottom:14px;">${PLAYERS[p].shortName} — Grand Slam Titles</div>
-        ${titles.map(t => `
-          <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px;">
-            <span>${t.slam}</span>
-            <span style="color:var(--text3);font-weight:600;">${t.year}</span>
-          </div>`).join('')}
-      </div>`;
-        });
-        html += '</div>';
-        el.innerHTML = html;
-
-      } else if (tabId === 'tourn-m1000') {
-        let html = `<div style="overflow-x:auto;"><table class="gs-table"><thead><tr>
-      <th>Tournament</th><th>Surface</th>
-      <th style="color:var(--sinner);">Sinner Titles</th><th style="color:var(--sinner);">Sinner Finals</th>
-      <th style="color:var(--alcaraz);">Alcaraz Titles</th><th style="color:var(--alcaraz);">Alcaraz Finals</th>
-    </tr></thead><tbody>`;
-        TOURNAMENT_STATS.m1000.forEach(t => {
-          html += `<tr>
-        <td style="font-weight:600;">${t.tournament}</td>
-        <td><span class="surface-pill ${t.surface}">${t.surface.charAt(0).toUpperCase() + t.surface.slice(1)}</span></td>
-        <td class="gs-s">${t.sinner.titles}</td><td style="color:var(--text2);">${t.sinner.finals}</td>
-        <td class="gs-a">${t.alcaraz.titles}</td><td style="color:var(--text2);">${t.alcaraz.finals}</td>
-      </tr>`;
-        });
-        const totT = TOURNAMENT_STATS.m1000.reduce((a, t) => ({ st: a.st + t.sinner.titles, sf: a.sf + t.sinner.finals, at: a.at + t.alcaraz.titles, af: a.af + t.alcaraz.finals }), { st: 0, sf: 0, at: 0, af: 0 });
-        html += `<tr style="border-top:1px solid var(--border);"><td style="color:var(--text3);font-weight:600;">Total</td><td></td>
-      <td class="gs-s">${totT.st}</td><td style="color:var(--text2);">${totT.sf}</td>
-      <td class="gs-a">${totT.at}</td><td style="color:var(--text2);">${totT.af}</td></tr>`;
-        html += '</tbody></table></div>';
-        el.innerHTML = html;
-
-      } else if (tabId === 'tourn-500') {
-        el.innerHTML = `
-      <div style="background:var(--bg2);border-radius:12px;padding:24px;">
-        <div style="margin-bottom:24px;" class="section-tag">ATP 500 Titles</div>
-        <div class="player-labels"><span class="player-label s">Sinner</span><span class="player-label a">Alcaraz</span></div>
-        <div class="stat-bar-group">
-          ${renderStatBar('ATP 500 Titles', PLAYERS.sinner.atp500, PLAYERS.alcaraz.atp500)}
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;">
-          <div style="font-size:13px;color:var(--text2);">
-            <div style="color:var(--sinner);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Sinner — ATP 500 Titles (${PLAYERS.sinner.atp500})</div>
-            Beijing 2023, Dubai 2024 (×2), Basel 2023, Halle 2025, Vienna 2023, Rotterdam 2025
-          </div>
-          <div style="font-size:13px;color:var(--text2);">
-            <div style="color:var(--alcaraz);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Alcaraz — ATP 500 Titles (${PLAYERS.alcaraz.atp500})</div>
-            Rio 2023, Barcelona 2022–2023, Beijing 2024, Queen's Club 2023–2024, Hamburg 2022, Washington 2023, Beijing 2023
-          </div>
-        </div>
-      </div>`;
-
-      } else if (tabId === 'tourn-250') {
-        el.innerHTML = `
-      <div style="background:var(--bg2);border-radius:12px;padding:24px;">
-        <div style="margin-bottom:24px;" class="section-tag">ATP 250 Titles</div>
-        <div class="player-labels"><span class="player-label s">Sinner</span><span class="player-label a">Alcaraz</span></div>
-        <div class="stat-bar-group">
-          ${renderStatBar('ATP 250 Titles', PLAYERS.sinner.atp250, PLAYERS.alcaraz.atp250)}
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;">
-          <div style="font-size:13px;color:var(--text2);">
-            <div style="color:var(--sinner);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Sinner — ATP 250 Titles (${PLAYERS.sinner.atp250})</div>
-            Sofia 2020, Antalya 2021, Canberra 2023, Washington 2021, Melbourne 2020, Metz 2020
-          </div>
-          <div style="font-size:13px;color:var(--text2);">
-            <div style="color:var(--alcaraz);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Alcaraz — ATP 250 Titles (${PLAYERS.alcaraz.atp250})</div>
-            Umag 2021, Río de Janeiro 2021
-          </div>
-        </div>
-      </div>`;
-
-      } else if (tabId === 'tourn-finals-atp') {
-        el.innerHTML = `
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;">
-        <div style="background:var(--bg2);border-radius:12px;padding:24px;border-top:2px solid var(--sinner);">
-          <div style="color:var(--sinner);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;">Sinner</div>
-          <div style="font-size:36px;font-weight:800;color:var(--sinner);">2</div>
-          <div style="color:var(--text2);font-size:13px;margin-top:4px;">ATP Finals Titles</div>
-          <div style="margin-top:20px;font-size:13px;color:var(--text2);">
-            <div style="padding:8px 0;border-bottom:1px solid var(--border);">2024 — Won (vs Fritz) &amp; unbeaten round-robin</div>
-            <div style="padding:8px 0;">2025 — Won vs Alcaraz 7-6(4), 7-5</div>
-          </div>
-        </div>
-        <div style="background:var(--bg2);border-radius:12px;padding:24px;border-top:2px solid var(--alcaraz);">
-          <div style="color:var(--alcaraz);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px;">Alcaraz</div>
-          <div style="font-size:36px;font-weight:800;color:var(--alcaraz);">0</div>
-          <div style="color:var(--text2);font-size:13px;margin-top:4px;">ATP Finals Titles</div>
-          <div style="margin-top:20px;font-size:13px;color:var(--text2);">
-            <div style="padding:8px 0;">2025 — Runner-Up (lost to Sinner in final)</div>
-          </div>
-        </div>
-      </div>`;
-
-      } else if (tabId === 'tourn-combined') {
-        const s = PLAYERS.sinner, a = PLAYERS.alcaraz;
-        el.innerHTML = `
-      <div class="player-labels" style="margin-bottom:12px;"><span class="player-label s">Sinner</span><span class="player-label a">Alcaraz</span></div>
-      <div class="stat-bar-group">
-        ${renderStatBar('Grand Slams', s.grandSlams, a.grandSlams)}
-        ${renderStatBar('ATP Finals', s.atpFinals, a.atpFinals)}
-        ${renderStatBar('Masters 1000', s.masters1000, a.masters1000)}
-        ${renderStatBar('ATP 500', s.atp500, a.atp500)}
-        ${renderStatBar('ATP 250', s.atp250, a.atp250)}
-        ${renderStatBar('Total Titles', s.totalTitles, a.totalTitles)}
-      </div>
-      <div style="margin-top:28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px;">
-        ${[
-            ['Grand Slams', s.grandSlams, a.grandSlams],
-            ['ATP Finals', s.atpFinals, a.atpFinals],
-            ['Masters 1000', s.masters1000, a.masters1000],
-            ['ATP 500', s.atp500, a.atp500],
-            ['ATP 250', s.atp250, a.atp250],
-            ['Total', s.totalTitles, a.totalTitles],
-          ].map(([label, sv, av]) => `
-          <div class="stat-card">
-            <div class="stat-card-label">${label}</div>
-            <div class="stat-card-vals">
-              <div class="stat-card-val"><span class="stat-card-player s">SIN</span><span class="stat-card-num" style="color:var(--sinner);">${sv}</span></div>
-              <div class="stat-card-val"><span class="stat-card-player a">ALC</span><span class="stat-card-num" style="color:var(--alcaraz);">${av}</span></div>
+      <!-- Player 1: Sinner -->
+      <div class="md:col-span-5 relative flex flex-col items-center md:items-start text-center md:text-left z-10 w-full reveal-left" id="hero-sinner">
+        <div class="relative w-full max-w-sm mx-auto md:mx-0 mb-6 group">
+          <!-- Brutalist shadow outline -->
+          <div class="absolute inset-0 bg-cool-grass translate-x-3 translate-y-3 transition-transform duration-300 group-hover:translate-x-4 group-hover:translate-y-4"></div>
+          <!-- Card Container -->
+          <div class="relative bg-dog-bone border-2 border-cool-grass overflow-hidden aspect-square w-full">
+            <img src="images/sinner.jpg" alt="Jannik Sinner" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+            <!-- Country Badge -->
+            <div class="absolute top-4 left-4 bg-cool-grass text-dog-bone font-headline font-bold text-xs uppercase tracking-widest px-3 py-1.5 border border-cool-grass shadow-[2px_2px_0px_0px_#99BD05]">
+              ITA
             </div>
-          </div>`).join('')}
-      </div>`;
-      }
-    }
+          </div>
+        </div>
+        <h1 class="font-headline font-black text-6xl lg:text-7xl xl:text-8xl uppercase tracking-tighter text-cool-grass leading-none mt-4 w-full text-center md:text-left">
+          JANNIK<br/>SINNER
+        </h1>
+        <p class="font-body text-lg font-bold text-cool-grass tracking-widest uppercase mt-4 w-full text-center md:text-left" id="hero-sinner-rank">ITA • World No. 1</p>
+      </div>
 
-    // SEASON TABLE
-    function renderSeasonContent() {
-      const cols = ['Titles', 'W-L', 'Year-End Rank'];
-      let html = `<div style="overflow-x:auto;"><table class="season-table">
-    <thead>
+      <!-- VS column -->
+      <div class="md:col-span-2 flex flex-col items-center justify-center relative z-20 self-center reveal">
+        <div class="font-headline text-8xl lg:text-9xl font-black italic text-cool-grass opacity-10 select-none leading-none absolute">VS</div>
+        <div class="flex flex-col items-center gap-2 editorial-border px-8 py-4 z-30 bg-dog-bone">
+          <div class="flex items-center gap-4">
+            <span class="font-headline font-bold text-5xl text-cool-grass counter-val" id="h2h-s-wins">–</span>
+            <span class="font-body text-xs font-bold text-cool-grass/60 uppercase tracking-widest">H2H</span>
+            <span class="font-headline font-bold text-5xl text-cool-grass counter-val" id="h2h-a-wins">–</span>
+          </div>
+          <div class="text-xs font-body text-cool-grass/50 uppercase tracking-widest">ATP Record</div>
+        </div>
+      </div>
+
+      <!-- Player 2: Alcaraz -->
+      <div class="md:col-span-5 relative flex flex-col items-center md:items-end text-center md:text-right z-10 w-full reveal-right" id="hero-alcaraz">
+        <div class="relative w-full max-w-sm mx-auto md:mx-0 mb-6 group">
+          <!-- Brutalist shadow outline -->
+          <div class="absolute inset-0 bg-cool-grass translate-x-3 translate-y-3 transition-transform duration-300 group-hover:translate-x-4 group-hover:translate-y-4"></div>
+          <!-- Card Container -->
+          <div class="relative bg-dog-bone border-2 border-cool-grass overflow-hidden aspect-square w-full">
+            <img src="images/alcaraz.jpg" alt="Carlos Alcaraz" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+            <!-- Country Badge -->
+            <div class="absolute top-4 right-4 bg-cool-grass text-dog-bone font-headline font-bold text-xs uppercase tracking-widest px-3 py-1.5 border border-cool-grass shadow-[2px_2px_0px_0px_#99BD05]">
+              ESP
+            </div>
+          </div>
+        </div>
+        <h1 class="font-headline font-black text-6xl lg:text-7xl xl:text-8xl uppercase tracking-tighter text-cool-grass leading-[0.9] mt-4 w-full flex flex-col items-end text-right">
+          <span class="block">CARLOS</span>
+          <span class="block -mt-1">ALCARAZ</span>
+        </h1>
+        <p class="font-body text-lg font-bold text-cool-grass tracking-widest uppercase mt-4 w-full text-center md:text-right" id="hero-alcaraz-rank">ESP • World No. 2</p>
+      </div>
+    </div>
+
+    <!-- HERO STATS STRIP -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-0 mt-12 border-t-2 border-cool-grass stagger-children" id="hero-stats-strip">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 2 · HEAD TO HEAD
+  ═══════════════════════════════════════ -->
+  <section class="editorial-border-bottom pb-16" id="head-to-head">
+    <h2 class="font-headline font-black text-4xl uppercase tracking-tighter text-cool-grass mb-4 reveal">Match Log</h2>
+
+    <!-- H2H Summary cards -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10 stagger-children" id="h2h-summary-strip"></div>
+
+    <!-- Tab bar -->
+    <div class="flex flex-wrap gap-2 mb-6 reveal" id="h2h-tabs">
+      <button class="tab-btn tab-active font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass transition-colors" data-tab="h2h-all">All Matches</button>
+      <button class="tab-btn font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tab="h2h-gs">Grand Slams</button>
+      <button class="tab-btn font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tab="h2h-m1000">Masters 1000</button>
+      <button class="tab-btn font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tab="h2h-hard">Hard Court</button>
+      <button class="tab-btn font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tab="h2h-clay">Clay</button>
+      <button class="tab-btn font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tab="h2h-grass">Grass</button>
+      <button class="tab-btn font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tab="h2h-finals">Finals Only</button>
+    </div>
+
+    <div class="overflow-x-auto reveal" id="h2h-table-container"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 3 · CAREER STATS
+  ═══════════════════════════════════════ -->
+  <section class="editorial-border-bottom pb-16" id="career-stats">
+    <h2 class="font-headline font-black text-4xl uppercase tracking-tighter text-cool-grass mb-4 reveal">Career Statistics</h2>
+
+    <!-- Profile cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 stagger-children" id="profile-grid"></div>
+
+    <!-- Stat bars header + bars -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-4">
+      <!-- Sinner bars -->
+      <div class="reveal-left">
+        <h3 class="font-headline font-bold text-2xl uppercase tracking-tight text-cool-grass mb-8 border-b-2 border-cool-grass pb-2">Jannik Sinner</h3>
+        <div class="space-y-6" id="sinner-bars"></div>
+      </div>
+      <!-- Alcaraz bars -->
+      <div class="reveal-right">
+        <h3 class="font-headline font-bold text-2xl uppercase tracking-tight text-cool-grass mb-8 border-b-2 border-cool-grass pb-2">Carlos Alcaraz</h3>
+        <div class="space-y-6" id="alcaraz-bars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 4 · SURFACES
+  ═══════════════════════════════════════ -->
+  <section class="editorial-border-bottom pb-16" id="surfaces">
+    <h2 class="font-headline font-black text-4xl uppercase tracking-tighter text-cool-grass mb-4 reveal">Surface Performance</h2>
+
+    <!-- Tab bar -->
+    <div class="flex flex-wrap gap-2 mb-8 reveal" id="surf-tabs">
+      <button class="surf-tab tab-active font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass transition-colors" data-surf="all">All Surfaces</button>
+      <button class="surf-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-surf="hard">Hard (Outdoor)</button>
+      <button class="surf-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-surf="indoor">Hard (Indoor)</button>
+      <button class="surf-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-surf="clay">Clay</button>
+      <button class="surf-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-surf="grass">Grass</button>
+    </div>
+
+    <div id="surface-content"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 5 · TOURNAMENTS
+  ═══════════════════════════════════════ -->
+  <section class="editorial-border-bottom pb-16" id="tournaments">
+    <h2 class="font-headline font-black text-4xl uppercase tracking-tighter text-cool-grass mb-4 reveal">Tournament Statistics</h2>
+
+    <div class="flex flex-wrap gap-2 mb-8 reveal" id="tourn-tabs">
+      <button class="tourn-tab tab-active font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass transition-colors" data-tourn="gs">Grand Slams</button>
+      <button class="tourn-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tourn="m1000">Masters 1000</button>
+      <button class="tourn-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tourn="atp500">ATP 500</button>
+      <button class="tourn-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tourn="atp250">ATP 250</button>
+      <button class="tourn-tab font-headline font-bold text-xs uppercase tracking-tight px-4 py-2 border-2 border-cool-grass text-cool-grass/60 hover:text-cool-grass transition-colors" data-tourn="atpfinals">ATP Finals</button>
+    </div>
+
+    <div id="tournament-content"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 6 · SEASON BY SEASON
+  ═══════════════════════════════════════ -->
+  <section class="editorial-border-bottom pb-16" id="season">
+    <h2 class="font-headline font-black text-4xl uppercase tracking-tighter text-cool-grass mb-8 reveal">Season by Season</h2>
+    <div class="overflow-x-auto reveal" id="season-content"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SECTION 7 · HONOURS & RECORDS
+  ═══════════════════════════════════════ -->
+  <section class="pb-16" id="honours">
+    <h2 class="font-headline font-black text-4xl uppercase tracking-tighter text-cool-grass mb-8 reveal">Honours &amp; Records</h2>
+    <div id="honours-content"></div>
+  </section>
+
+</main>
+</div>
+
+<footer class="border-t-2 border-cool-grass px-8 py-10 text-center">
+  <p class="font-body text-sm text-cool-grass/60">All statistics are ATP Tour level only. Last updated April 2026.</p>
+  <p class="font-body text-xs text-cool-grass/40 mt-2">Stats sourced from ATP Tour, Wikipedia, Olympics.com, and official tournament records.</p>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════════════ -->
+<script>
+// ─────────────────────────────────────────
+//  MODULE-LEVEL DATA VARIABLES
+// ─────────────────────────────────────────
+let PLAYERS, H2H_MATCHES, SURFACE_STATS, TOURNAMENT_STATS,
+    SEASON_STATS, GRAND_SLAM_TITLES, RECORDS, OTHER_TROPHIES;
+
+// ─────────────────────────────────────────
+//  HELPERS
+// ─────────────────────────────────────────
+function pct(w, l) { return ((w / (w + l)) * 100).toFixed(1); }
+
+function surfacePill(surf) {
+  const map = { hard:'Hard', clay:'Clay', grass:'Grass', indoor:'Indoor' };
+  return `<span class="surf-${surf} text-xs font-bold uppercase px-2 py-0.5 rounded">${map[surf] || surf}</span>`;
+}
+
+// Build a single animated stat bar row
+function buildBarRow(label, sVal, sDisplay, aDisplay) {
+  return `
+  <div class="stat-row">
+    <div class="flex justify-between mb-2 font-headline font-bold text-sm uppercase">
+      <span>${label}</span>
+      <span>${sDisplay}</span>
+    </div>
+    <div class="stat-bar-container border border-cool-grass">
+      <div class="stat-bar-fill" data-width="${sVal}%">
+        <div class="tennis-ball-tracker"></div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// Compute bar width as % of whichever player is higher (max = 100%)
+function relPct(val, maxVal) {
+  if (maxVal === 0) return 50;
+  return Math.round((val / maxVal) * 100);
+}
+
+// ─────────────────────────────────────────
+//  HERO : populate H2H pill + stats strip
+// ─────────────────────────────────────────
+function renderHero() {
+  const s = PLAYERS.sinner, a = PLAYERS.alcaraz;
+
+  // H2H wins
+  const sw = H2H_MATCHES.filter(m => m.winner === 'sinner').length;
+  const aw = H2H_MATCHES.filter(m => m.winner === 'alcaraz').length;
+  document.getElementById('h2h-s-wins').textContent = sw;
+  document.getElementById('h2h-a-wins').textContent = aw;
+
+  // Ranking labels
+  document.getElementById('hero-sinner-rank').textContent = `ITA • World No. ${s.currentRanking}`;
+  document.getElementById('hero-alcaraz-rank').textContent = `ESP • World No. ${a.currentRanking}`;
+
+  // Stats strip
+  const stats = [
+    { label: 'Grand Slams', sv: s.grandSlams, av: a.grandSlams },
+    { label: 'Total Titles', sv: s.totalTitles, av: a.totalTitles },
+    { label: 'Career Wins', sv: s.careerRecord.w, av: a.careerRecord.w },
+    { label: 'Prize Money', sv: s.prizeMoney, av: a.prizeMoney, noAnim: true },
+  ];
+  const strip = document.getElementById('hero-stats-strip');
+  strip.innerHTML = stats.map(st => `
+    <div class="border-r-2 last:border-r-0 border-cool-grass px-6 py-5 text-center">
+      <div class="font-body text-xs uppercase tracking-widest text-cool-grass/50 mb-1">${st.label}</div>
+      <div class="font-headline font-black text-2xl md:text-3xl text-cool-grass flex items-center justify-center gap-3">
+        <span class="${st.noAnim ? '' : 'counter-num'}" data-final="${st.sv}">${st.sv}</span>
+        <span class="text-sm font-body text-cool-grass/40">–</span>
+        <span class="${st.noAnim ? '' : 'counter-num'}" data-final="${st.av}">${st.av}</span>
+      </div>
+    </div>`).join('');
+}
+
+// ─────────────────────────────────────────
+//  H2H SUMMARY STRIP
+// ─────────────────────────────────────────
+function renderH2HSummary() {
+  const calc = filter => {
+    const f = filter ? H2H_MATCHES.filter(filter) : H2H_MATCHES;
+    const sw = f.filter(m => m.winner === 'sinner').length;
+    const aw = f.filter(m => m.winner === 'alcaraz').length;
+    return { sw, aw, total: f.length };
+  };
+  const cats = [
+    { label: 'Overall',       data: calc() },
+    { label: 'Grand Slams',   data: calc(m => m.level === 'gs') },
+    { label: 'Masters 1000',  data: calc(m => m.level === 'M1000') },
+    { label: 'Finals Only',   data: calc(m => m.round === 'Final') },
+    { label: 'Hard Court',    data: calc(m => m.surface === 'hard' || m.surface === 'indoor') },
+    { label: 'Clay',          data: calc(m => m.surface === 'clay') },
+    { label: 'Grass',         data: calc(m => m.surface === 'grass') },
+    { label: 'Indoor Hard',   data: calc(m => m.surface === 'indoor') },
+  ];
+  document.getElementById('h2h-summary-strip').innerHTML = cats.map(({ label, data }) => {
+    const leader = data.sw > data.aw ? 'Sinner leads' : data.aw > data.sw ? 'Alcaraz leads' : 'Tied';
+    return `
+    <div class="border-2 border-cool-grass p-4 text-center bg-dog-bone">
+      <div class="font-body text-xs uppercase tracking-widest text-cool-grass/50 mb-2">${label}</div>
+      <div class="font-headline font-black text-3xl text-cool-grass">
+        ${data.sw}<span class="text-base font-body text-cool-grass/40 mx-1">–</span>${data.aw}
+      </div>
+      <div class="font-body text-xs text-cool-grass/60 mt-1">${leader}</div>
+    </div>`;
+  }).join('');
+}
+
+// ─────────────────────────────────────────
+//  H2H MATCH TABLE
+// ─────────────────────────────────────────
+function renderMatchTable(matches) {
+  if (!matches.length) return '<p class="font-body text-sm text-cool-grass/50 py-8">No matches in this category.</p>';
+  return `
+  <table class="w-full text-left font-body">
+    <thead class="bg-cool-grass text-dog-bone font-headline uppercase text-xs">
       <tr>
-        <th>Season</th>
-        ${cols.map(c => `<th style="color:var(--sinner);">Sinner ${c}</th>`).join('')}
-        ${cols.map(c => `<th style="color:var(--alcaraz);">Alcaraz ${c}</th>`).join('')}
+        <th class="py-3 px-4">Year</th>
+        <th class="py-3 px-4">Tournament</th>
+        <th class="py-3 px-4">Round</th>
+        <th class="py-3 px-4">Surface</th>
+        <th class="py-3 px-4">Winner</th>
+        <th class="py-3 px-4">Score</th>
       </tr>
     </thead>
-    <tbody>
-      ${SEASON_STATS.slice().reverse().map(s => `
-        <tr>
-          <td>${s.year}${s.year === 2026 ? ' *' : ''}</td>
-          <td class="cell-s">${s.sinner.titles}</td>
-          <td class="cell-s">${s.sinner.wl}</td>
-          <td class="cell-s">${s.sinner.yearEndRank ? 'No. ' + s.sinner.yearEndRank : '—'}</td>
-          <td class="cell-a">${s.alcaraz.titles}</td>
-          <td class="cell-a">${s.alcaraz.wl}</td>
-          <td class="cell-a">${s.alcaraz.yearEndRank ? 'No. ' + s.alcaraz.yearEndRank : '—'}</td>
-        </tr>`).join('')}
+    <tbody class="divide-y-2 divide-cool-grass/20 border-b-2 border-cool-grass">
+      ${matches.map(m => `
+      <tr class="hover:bg-surface-variant transition-colors">
+        <td class="py-3 px-4 font-bold text-sm">${m.year}</td>
+        <td class="py-3 px-4 text-sm">${m.tournament}</td>
+        <td class="py-3 px-4 text-sm text-cool-grass/70">${m.round}</td>
+        <td class="py-3 px-4">${surfacePill(m.surface)}</td>
+        <td class="py-3 px-4"><span class="font-bold text-sm text-cool-grass">${m.winner === 'sinner' ? 'Sinner' : 'Alcaraz'}</span></td>
+        <td class="py-3 px-4 text-sm font-mono text-cool-grass/70">${m.score}</td>
+      </tr>`).join('')}
     </tbody>
-  </table></div>
-  <div style="margin-top:12px;font-size:11px;color:var(--text3);">* 2026 stats current as of April 2026.</div>`;
-      document.getElementById('season-content').innerHTML = html;
-    }
+  </table>`;
+}
 
-    // HONOURS
-    function renderHonours() {
-      let html = '';
+function renderH2HTable(tabId) {
+  const filters = {
+    'h2h-all':    null,
+    'h2h-gs':     m => m.level === 'gs',
+    'h2h-m1000':  m => m.level === 'M1000',
+    'h2h-hard':   m => m.surface === 'hard',
+    'h2h-clay':   m => m.surface === 'clay',
+    'h2h-grass':  m => m.surface === 'grass',
+    'h2h-finals': m => m.round === 'Final',
+  };
+  const filter = filters[tabId];
+  const matches = filter ? H2H_MATCHES.filter(filter) : H2H_MATCHES;
+  document.getElementById('h2h-table-container').innerHTML = renderMatchTable(matches);
+}
 
-      // Grand Slams
-      html += `<div class="honour-section">
-    <div class="honour-title">Grand Slam Titles</div>
-    <div class="honour-grid">
-      ${['sinner', 'alcaraz'].map(p => `
-        <div class="honour-col">
-          <div class="honour-col-name ${p === 'sinner' ? 's' : 'a'}">${PLAYERS[p].shortName} — ${GRAND_SLAM_TITLES[p].length} Grand Slams</div>
-          ${GRAND_SLAM_TITLES[p].map(t => `
-            <div class="honour-item">
-              <span>${t.slam}</span>
-              <span class="honour-item-year">${t.year}</span>
-            </div>`).join('')}
-        </div>`).join('')}
-    </div>
+// ─────────────────────────────────────────
+//  PROFILE CARDS
+// ─────────────────────────────────────────
+function renderProfileGrid() {
+  const s = PLAYERS.sinner, a = PLAYERS.alcaraz;
+  const rows = [
+    ['Full Name', s.fullName, a.fullName],
+    ['Date of Birth', s.dob, a.dob],
+    ['Nationality', s.nationality, a.nationality],
+    ['Height', s.height, a.height],
+    ['Plays', s.plays, a.plays],
+    ['Coach', s.coach, a.coach],
+    ['Turned Pro', s.turnedPro, a.turnedPro],
+    ['Current Ranking', `No. ${s.currentRanking}`, `No. ${a.currentRanking}`],
+    ['Career-High Ranking', `No. ${s.careerHighRanking}`, `No. ${a.careerHighRanking}`],
+    ['First No. 1', s.firstNo1, a.firstNo1],
+    ['Year-End No. 1', s.yearEndNo1.join(', '), a.yearEndNo1.join(', ')],
+  ];
+
+  const makeCol = (player, nameClass, vals) => `
+  <div class="border-2 border-cool-grass p-6">
+    <div class="font-headline font-black text-2xl uppercase tracking-tight ${nameClass} mb-6">${player}</div>
+    ${vals.map(r => `
+    <div class="flex justify-between py-3 border-b border-cool-grass/20 font-body text-sm last:border-0">
+      <span class="text-cool-grass/60">${r[0]}</span>
+      <span class="font-bold text-right ml-4">${r[1]}</span>
+    </div>`).join('')}
   </div>`;
 
-      // Other trophies loaded from data.json
-      OTHER_TROPHIES.forEach(trophy => {
-        html += `<div class="honour-section">
-      <div class="honour-title">${trophy.label}</div>
-      <div class="honour-grid">
-        ${['sinner', 'alcaraz'].map(p => `
-          <div class="honour-col">
-            <div class="honour-col-name ${p === 'sinner' ? 's' : 'a'}">${PLAYERS[p].shortName}</div>
-            ${trophy[p].map(t => `
-              <div class="honour-item">
-                <span>${t}</span>
-              </div>`).join('')}
-          </div>`).join('')}
+  document.getElementById('profile-grid').innerHTML =
+    makeCol('Jannik Sinner', 'text-cool-grass', rows.map(r => [r[0], r[1]])) +
+    makeCol('Carlos Alcaraz', 'text-cool-grass', rows.map(r => [r[0], r[2]]));
+}
+
+// ─────────────────────────────────────────
+//  CAREER STAT BARS
+// ─────────────────────────────────────────
+function renderCareerBars() {
+  const s = PLAYERS.sinner, a = PLAYERS.alcaraz;
+  const bars = [
+    { label: 'Win %',       sv: s.winPct,          av: a.winPct,          sd: s.winPct + '%',   ad: a.winPct + '%' },
+    { label: 'Total Titles',sv: s.totalTitles,      av: a.totalTitles   },
+    { label: 'Grand Slams', sv: s.grandSlams,       av: a.grandSlams    },
+    { label: 'ATP Finals',  sv: s.atpFinals,        av: a.atpFinals     },
+    { label: 'Masters 1000',sv: s.masters1000,      av: a.masters1000   },
+    { label: 'ATP 500',     sv: s.atp500,           av: a.atp500        },
+    { label: 'ATP 250',     sv: s.atp250,           av: a.atp250        },
+    { label: 'Career Wins', sv: s.careerRecord.w,   av: a.careerRecord.w},
+  ];
+
+  const maxVals = bars.map(b => Math.max(parseFloat(b.sv), parseFloat(b.av)));
+
+  document.getElementById('sinner-bars').innerHTML = bars.map((b, i) =>
+    buildBarRow(b.label, relPct(parseFloat(b.sv), maxVals[i]), b.sd || b.sv)
+  ).join('');
+
+  document.getElementById('alcaraz-bars').innerHTML = bars.map((b, i) => `
+  <div class="stat-row">
+    <div class="flex justify-between mb-2 font-headline font-bold text-sm uppercase">
+      <span>${b.label}</span>
+      <span>${b.ad || b.av}</span>
+    </div>
+    <div class="stat-bar-container border border-cool-grass rtl-bar">
+      <div class="stat-bar-fill alcaraz-fill" data-width="${relPct(parseFloat(b.av), maxVals[i])}%">
+        <div class="tennis-ball-tracker"></div>
+      </div>
+    </div>
+  </div>`).join('');
+}
+
+// ─────────────────────────────────────────
+//  SURFACES
+// ─────────────────────────────────────────
+function renderSurfaces(surfKey) {
+  const surfaces = surfKey === 'all'
+    ? Object.entries(SURFACE_STATS)
+    : [[surfKey, SURFACE_STATS[surfKey]]];
+
+  let html = '';
+  surfaces.forEach(([key, surf]) => {
+    const s = surf.sinner, a = surf.alcaraz;
+    const maxW   = Math.max(s.w,   a.w);
+    const maxL   = Math.max(s.l,   a.l);
+    const maxT   = Math.max(s.titles, a.titles);
+
+    html += `
+    <div class="mb-12">
+      <div class="font-headline font-black text-xl uppercase tracking-tight text-cool-grass border-b-2 border-cool-grass pb-2 mb-6">${surf.label}</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Sinner -->
+        <div>
+          <div class="font-headline font-bold text-sm uppercase text-cool-grass mb-4">Sinner</div>
+          <div class="space-y-5">
+            ${buildBarRow('Win %', relPct(s.pct, Math.max(s.pct, a.pct)), s.pct + '%')}
+            ${buildBarRow('Wins',  relPct(s.w, maxW), s.w)}
+            ${buildBarRow('Losses', relPct(s.l, maxL), s.l)}
+            ${buildBarRow('Titles', relPct(s.titles, maxT), s.titles)}
+          </div>
+        </div>
+        <!-- Alcaraz -->
+        <div>
+          <div class="font-headline font-bold text-sm uppercase text-cool-grass mb-4">Alcaraz</div>
+          <div class="space-y-5">
+            <div class="stat-row"><div class="flex justify-between mb-2 font-headline font-bold text-sm uppercase"><span>Win %</span><span>${a.pct}%</span></div>
+              <div class="stat-bar-container border border-cool-grass rtl-bar"><div class="stat-bar-fill" data-width="${relPct(a.pct, Math.max(s.pct, a.pct))}%"><div class="tennis-ball-tracker"></div></div></div></div>
+            <div class="stat-row"><div class="flex justify-between mb-2 font-headline font-bold text-sm uppercase"><span>Wins</span><span>${a.w}</span></div>
+              <div class="stat-bar-container border border-cool-grass rtl-bar"><div class="stat-bar-fill" data-width="${relPct(a.w, maxW)}%"><div class="tennis-ball-tracker"></div></div></div></div>
+            <div class="stat-row"><div class="flex justify-between mb-2 font-headline font-bold text-sm uppercase"><span>Losses</span><span>${a.l}</span></div>
+              <div class="stat-bar-container border border-cool-grass rtl-bar"><div class="stat-bar-fill" data-width="${relPct(a.l, maxL)}%"><div class="tennis-ball-tracker"></div></div></div></div>
+            <div class="stat-row"><div class="flex justify-between mb-2 font-headline font-bold text-sm uppercase"><span>Titles</span><span>${a.titles}</span></div>
+              <div class="stat-bar-container border border-cool-grass rtl-bar"><div class="stat-bar-fill" data-width="${relPct(a.titles, maxT)}%"><div class="tennis-ball-tracker"></div></div></div></div>
+          </div>
+        </div>
       </div>
     </div>`;
-      });
+  });
 
-      // Records
-      html += `<div class="honour-section">
-    <div class="honour-title">Notable Records</div>
-    <div class="records-grid">
-      ${RECORDS.map(r => `
-        <div class="record-item ${r.who}">
-          <div class="record-item-who ${r.who}">${r.who === 'both' ? 'Both Players' : PLAYERS[r.who].shortName}</div>
-          <div class="record-item-text">${r.text}</div>
+  document.getElementById('surface-content').innerHTML = html;
+  // re-observe new bars
+  observeBars();
+}
+
+// ─────────────────────────────────────────
+//  TOURNAMENTS
+// ─────────────────────────────────────────
+function renderTournaments(tabId) {
+  const el = document.getElementById('tournament-content');
+
+  if (tabId === 'gs') {
+    const slams = TOURNAMENT_STATS.gs;
+    let rows = '';
+    Object.values(slams).forEach(gs => {
+      rows += `<tr class="hover:bg-surface-variant transition-colors border-b border-cool-grass/20">
+        <td class="py-3 px-4 font-bold text-sm">${gs.label}</td>
+        <td class="py-3 px-4">${surfacePill(gs.surface)}</td>
+        <td class="py-3 px-4 font-bold text-cool-grass text-sm">${gs.sinner.titles}</td>
+        <td class="py-3 px-4 text-cool-grass/60 text-sm">${gs.sinner.finals}</td>
+        <td class="py-3 px-4 font-bold text-cool-grass text-sm">${gs.alcaraz.titles}</td>
+        <td class="py-3 px-4 text-cool-grass/60 text-sm">${gs.alcaraz.finals}</td>
+      </tr>`;
+    });
+    el.innerHTML = `
+    <div class="overflow-x-auto">
+    <table class="w-full text-left font-body">
+      <thead class="bg-cool-grass text-dog-bone font-headline uppercase text-xs">
+        <tr>
+          <th class="py-3 px-4">Grand Slam</th>
+          <th class="py-3 px-4">Surface</th>
+          <th class="py-3 px-4">Sinner Titles</th>
+          <th class="py-3 px-4">Sinner Finals</th>
+          <th class="py-3 px-4">Alcaraz Titles</th>
+          <th class="py-3 px-4">Alcaraz Finals</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+      ${['sinner','alcaraz'].map(p => `
+      <div class="border-2 border-cool-grass p-6">
+        <div class="font-headline font-black text-lg uppercase tracking-tight text-cool-grass mb-4">${PLAYERS[p].shortName} — Grand Slams</div>
+        ${GRAND_SLAM_TITLES[p].map(t => `
+        <div class="flex justify-between py-3 border-b border-cool-grass/20 font-body text-sm last:border-0">
+          <span>${t.slam}</span>
+          <span class="font-bold text-cool-grass/60">${t.year}</span>
         </div>`).join('')}
+      </div>`).join('')}
+    </div>`;
+
+  } else if (tabId === 'm1000') {
+    let rows = '';
+    TOURNAMENT_STATS.m1000.forEach(t => {
+      rows += `<tr class="hover:bg-surface-variant transition-colors border-b border-cool-grass/20">
+        <td class="py-3 px-4 font-bold text-sm">${t.tournament}</td>
+        <td class="py-3 px-4">${surfacePill(t.surface)}</td>
+        <td class="py-3 px-4 font-bold text-cool-grass text-sm">${t.sinner.titles}</td>
+        <td class="py-3 px-4 text-cool-grass/60 text-sm">${t.sinner.finals}</td>
+        <td class="py-3 px-4 font-bold text-cool-grass text-sm">${t.alcaraz.titles}</td>
+        <td class="py-3 px-4 text-cool-grass/60 text-sm">${t.alcaraz.finals}</td>
+      </tr>`;
+    });
+    el.innerHTML = `<div class="overflow-x-auto">
+    <table class="w-full text-left font-body">
+      <thead class="bg-cool-grass text-dog-bone font-headline uppercase text-xs">
+        <tr>
+          <th class="py-3 px-4">Tournament</th>
+          <th class="py-3 px-4">Surface</th>
+          <th class="py-3 px-4">Sinner Titles</th>
+          <th class="py-3 px-4">Sinner Finals</th>
+          <th class="py-3 px-4">Alcaraz Titles</th>
+          <th class="py-3 px-4">Alcaraz Finals</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+
+  } else if (tabId === 'atp500') {
+    el.innerHTML = `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      ${['sinner','alcaraz'].map(p => `
+      <div class="border-2 border-cool-grass p-6">
+        <div class="font-headline font-black text-lg uppercase tracking-tight text-cool-grass mb-2">${PLAYERS[p].shortName}</div>
+        <div class="font-headline font-black text-5xl text-cool-grass mb-4 counter-num" data-final="${PLAYERS[p].atp500}">${PLAYERS[p].atp500}</div>
+        <div class="font-body text-xs uppercase tracking-widest text-cool-grass/50">ATP 500 Titles</div>
+      </div>`).join('')}
+    </div>`;
+
+  } else if (tabId === 'atp250') {
+    el.innerHTML = `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      ${['sinner','alcaraz'].map(p => `
+      <div class="border-2 border-cool-grass p-6">
+        <div class="font-headline font-black text-lg uppercase tracking-tight text-cool-grass mb-2">${PLAYERS[p].shortName}</div>
+        <div class="font-headline font-black text-5xl text-cool-grass mb-4 counter-num" data-final="${PLAYERS[p].atp250}">${PLAYERS[p].atp250}</div>
+        <div class="font-body text-xs uppercase tracking-widest text-cool-grass/50">ATP 250 Titles</div>
+      </div>`).join('')}
+    </div>`;
+
+  } else if (tabId === 'atpfinals') {
+    el.innerHTML = `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      ${['sinner','alcaraz'].map(p => `
+      <div class="border-2 border-cool-grass p-6">
+        <div class="font-headline font-black text-lg uppercase tracking-tight text-cool-grass mb-2">${PLAYERS[p].shortName}</div>
+        <div class="font-headline font-black text-5xl text-cool-grass mb-4 counter-num" data-final="${PLAYERS[p].atpFinals}">${PLAYERS[p].atpFinals}</div>
+        <div class="font-body text-xs uppercase tracking-widest text-cool-grass/50 mb-4">ATP Finals Titles</div>
+        ${OTHER_TROPHIES.find(t=>t.label==='ATP Finals')
+          ? OTHER_TROPHIES.find(t=>t.label==='ATP Finals')[p].map(y=>`<div class="py-2 border-b border-cool-grass/20 font-body text-sm">${y}</div>`).join('')
+          : ''}
+      </div>`).join('')}
+    </div>`;
+  }
+
+  observeCounters();
+}
+
+// ─────────────────────────────────────────
+//  SEASON TABLE
+// ─────────────────────────────────────────
+function renderSeasons() {
+  const cols = ['Titles', 'W-L', 'Year-End Rank'];
+  const html = `
+  <table class="w-full text-left font-body">
+    <thead class="bg-cool-grass text-dog-bone font-headline uppercase text-xs">
+      <tr>
+        <th class="py-3 px-4">Season</th>
+        ${cols.map(c => `<th class="py-3 px-4">Sinner ${c}</th>`).join('')}
+        ${cols.map(c => `<th class="py-3 px-4">Alcaraz ${c}</th>`).join('')}
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-cool-grass/20 border-b-2 border-cool-grass">
+      ${SEASON_STATS.slice().reverse().map(s => `
+      <tr class="hover:bg-surface-variant transition-colors">
+        <td class="py-3 px-4 font-bold text-sm">${s.year}${s.year === 2026 ? ' *' : ''}</td>
+        <td class="py-3 px-4 font-bold text-cool-grass text-sm">${s.sinner.titles}</td>
+        <td class="py-3 px-4 text-sm">${s.sinner.wl}</td>
+        <td class="py-3 px-4 text-sm text-cool-grass/70">${s.sinner.yearEndRank ? 'No. ' + s.sinner.yearEndRank : '—'}</td>
+        <td class="py-3 px-4 font-bold text-cool-grass text-sm">${s.alcaraz.titles}</td>
+        <td class="py-3 px-4 text-sm">${s.alcaraz.wl}</td>
+        <td class="py-3 px-4 text-sm text-cool-grass/70">${s.alcaraz.yearEndRank ? 'No. ' + s.alcaraz.yearEndRank : '—'}</td>
+      </tr>`).join('')}
+    </tbody>
+  </table>
+  <p class="font-body text-xs text-cool-grass/40 mt-3">* 2026 stats current as of April 2026.</p>`;
+  document.getElementById('season-content').innerHTML = html;
+}
+
+// ─────────────────────────────────────────
+//  HONOURS & RECORDS
+// ─────────────────────────────────────────
+function renderHonours() {
+  let html = '';
+
+  // Grand Slams
+  html += `
+  <div class="mb-14">
+    <div class="font-headline font-bold text-xl uppercase tracking-tight text-cool-grass border-b-2 border-cool-grass pb-2 mb-6">Grand Slam Titles</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 stagger-children">
+      ${['sinner','alcaraz'].map(p => `
+      <div class="border-2 border-cool-grass p-6">
+        <div class="font-headline font-black text-lg uppercase tracking-tight text-cool-grass mb-1">${PLAYERS[p].shortName}</div>
+        <div class="font-headline font-black text-4xl text-cool-grass mb-4">${GRAND_SLAM_TITLES[p].length}</div>
+        ${GRAND_SLAM_TITLES[p].map(t => `
+        <div class="flex justify-between py-3 border-b border-cool-grass/20 font-body text-sm last:border-0">
+          <span>${t.slam}</span>
+          <span class="font-bold text-cool-grass/60">${t.year}</span>
+        </div>`).join('')}
+      </div>`).join('')}
     </div>
   </div>`;
 
-      document.getElementById('honours-content').innerHTML = html;
-    }
+  // Other trophies
+  OTHER_TROPHIES.forEach(trophy => {
+    html += `
+    <div class="mb-12">
+      <div class="font-headline font-bold text-xl uppercase tracking-tight text-cool-grass border-b-2 border-cool-grass pb-2 mb-6">${trophy.label}</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 stagger-children">
+        ${['sinner','alcaraz'].map(p => `
+        <div class="border-2 border-cool-grass p-6">
+          <div class="font-headline font-black text-lg uppercase tracking-tight text-cool-grass mb-4">${PLAYERS[p].shortName}</div>
+          ${trophy[p].map(t => `
+          <div class="py-3 border-b border-cool-grass/20 font-body text-sm last:border-0">${t}</div>`).join('')}
+        </div>`).join('')}
+      </div>
+    </div>`;
+  });
 
-    // ================================================================
-    // TAB SYSTEM
-    // ================================================================
-    function initTabs() {
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const tabId = btn.dataset.tab;
-          const group = btn.closest('section') || btn.closest('div');
-          const allBtns = btn.parentElement.querySelectorAll('.tab-btn');
-          allBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
+  // Records
+  html += `
+  <div class="mb-8">
+    <div class="font-headline font-bold text-xl uppercase tracking-tight text-cool-grass border-b-2 border-cool-grass pb-2 mb-6">Notable Records</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 stagger-children">
+      ${RECORDS.map(r => `
+      <div class="border-l-4 border-cool-grass p-5 bg-surface-variant">
+        <div class="font-headline font-bold text-xs uppercase tracking-widest text-cool-grass/60 mb-2">${r.who === 'both' ? 'Both Players' : PLAYERS[r.who].shortName}</div>
+        <p class="font-body text-sm leading-relaxed">${r.text}</p>
+      </div>`).join('')}
+    </div>
+  </div>`;
 
-          if (tabId.startsWith('h2h-')) {
-            document.getElementById('h2h-table-container').innerHTML = renderH2HTableAll(tabId);
-          } else if (tabId.startsWith('surf-')) {
-            renderSurfaceContent(tabId);
-          } else if (tabId.startsWith('tourn-')) {
-            renderTournamentContent(tabId);
-          }
-        });
-      });
-    }
+  document.getElementById('honours-content').innerHTML = html;
+  // kick off stagger observers after new content
+  observeReveal();
+}
 
-    // ================================================================
-    // NAV ACTIVE STATE
-    // ================================================================
-    function initNavActive() {
-      const sections = ['hero', 'h2h', 'career', 'surface', 'tournaments', 'seasons', 'honours'];
-      const links = sections.map(id => document.getElementById('nav-' + id));
-
-      window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(id => {
-          const el = document.getElementById(id);
-          if (el && window.scrollY >= el.offsetTop - 100) current = id;
-        });
-        links.forEach(l => {
-          if (!l) return;
-          l.classList.toggle('active', l.id === 'nav-' + current);
-        });
-      });
-    }
-
-    // ================================================================
-    // INIT — loads data.json then renders everything
-    // ================================================================
-    function init(data) {
-      // Assign fetched data to module-level variables
-      PLAYERS          = data.players;
-      H2H_MATCHES      = data.h2hMatches;
-      SURFACE_STATS    = data.surfaceStats;
-      TOURNAMENT_STATS = data.tournamentStats;
-      SEASON_STATS     = data.seasonStats;
-      GRAND_SLAM_TITLES = data.grandSlamTitles;
-      RECORDS          = data.records;
-      OTHER_TROPHIES   = data.otherTrophies;
-
-      // Update nav "last updated" label
-      if (data.meta && data.meta.lastUpdated) {
-        const el = document.querySelector('.nav-updated');
-        if (el) el.textContent = 'Updated ' + data.meta.lastUpdated;
+// ─────────────────────────────────────────
+//  SCROLL ANIMATIONS — Intersection Observers
+// ─────────────────────────────────────────
+function observeBars() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const width = bar.getAttribute('data-width');
+        setTimeout(() => {
+          bar.style.width = width;
+          bar.classList.add('animate');
+        }, 80);
+        observer.unobserve(bar);
       }
-
-      renderH2HSummary();
-      document.getElementById('h2h-table-container').innerHTML = renderH2HTableAll('h2h-all');
-      renderProfileGrid();
-      renderCareerBars();
-      renderSurfaceContent('surf-all');
-      renderTournamentContent('tourn-gs');
-      renderSeasonContent();
-      renderHonours();
-      initTabs();
-      initNavActive();
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      fetch('data.json')
-        .then(res => {
-          if (!res.ok) throw new Error('Failed to load data.json');
-          return res.json();
-        })
-        .then(data => init(data))
-        .catch(err => {
-          console.error('Stats load error:', err);
-          document.querySelector('main').insertAdjacentHTML(
-            'afterbegin',
-            '<div style="text-align:center;padding:40px;color:#f97316;font-size:14px;">⚠️ Could not load stats. Open via a local server (not file://).</div>'
-          );
-        });
     });
-  </script>
-</body>
+  }, { threshold: 0.15 });
 
+  document.querySelectorAll('.stat-bar-fill').forEach(bar => {
+    // Only observe bars that haven't animated yet (width still 0)
+    if (bar.style.width === '' || bar.style.width === '0%') {
+      observer.observe(bar);
+    }
+  });
+}
+
+function animateCounter(el, target, duration = 600) {
+  const start = performance.now();
+  const isFloat = String(target).includes('.');
+  const from = 0;
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    // ease out quart
+    const eased = 1 - Math.pow(1 - progress, 4);
+    const value = from + (target - from) * eased;
+    el.textContent = isFloat ? value.toFixed(1) : Math.round(value).toString();
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = isFloat ? target.toFixed(1) : target.toString();
+  }
+  requestAnimationFrame(step);
+}
+
+function observeCounters() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const final = parseFloat(el.getAttribute('data-final'));
+        animateCounter(el, final);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.counter-num').forEach(el => observer.observe(el));
+}
+
+function observeReveal() {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    if (!el.classList.contains('visible')) revealObserver.observe(el);
+  });
+
+  const staggerObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        staggerObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+  document.querySelectorAll('.stagger-children').forEach(el => {
+    if (!el.classList.contains('visible')) staggerObserver.observe(el);
+  });
+}
+
+// ─────────────────────────────────────────
+//  TABS
+// ─────────────────────────────────────────
+function initTabs() {
+  // H2H tabs
+  document.querySelectorAll('#h2h-tabs .tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#h2h-tabs .tab-btn').forEach(b => b.classList.remove('tab-active'));
+      btn.classList.add('tab-active');
+      renderH2HTable(btn.dataset.tab);
+    });
+  });
+
+  // Surface tabs
+  document.querySelectorAll('.surf-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.surf-tab').forEach(b => b.classList.remove('tab-active'));
+      btn.classList.add('tab-active');
+      renderSurfaces(btn.dataset.surf);
+    });
+  });
+
+  // Tournament tabs
+  document.querySelectorAll('.tourn-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tourn-tab').forEach(b => b.classList.remove('tab-active'));
+      btn.classList.add('tab-active');
+      renderTournaments(btn.dataset.tourn);
+      observeCounters();
+    });
+  });
+}
+
+// ─────────────────────────────────────────
+//  NAV ACTIVE on scroll
+// ─────────────────────────────────────────
+function initNavActive() {
+  const sectionIds = ['overview','head-to-head','career-stats','surfaces','tournaments','season','honours'];
+  const links = document.querySelectorAll('#main-nav .nav-link');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sectionIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 120) current = id;
+    });
+    links.forEach(l => {
+      const href = l.getAttribute('href').replace('#','');
+      if (href === current) {
+        l.classList.add('border-b-4','border-cool-grass');
+        l.classList.remove('text-cool-grass/70');
+      } else {
+        l.classList.remove('border-b-4');
+        l.classList.add('text-cool-grass/70');
+      }
+    });
+  }, { passive: true });
+}
+
+// ─────────────────────────────────────────
+//  INIT
+// ─────────────────────────────────────────
+function init(data) {
+  PLAYERS           = data.players;
+  H2H_MATCHES       = data.h2hMatches;
+  SURFACE_STATS     = data.surfaceStats;
+  TOURNAMENT_STATS  = data.tournamentStats;
+  SEASON_STATS      = data.seasonStats;
+  GRAND_SLAM_TITLES = data.grandSlamTitles;
+  RECORDS           = data.records;
+  OTHER_TROPHIES    = data.otherTrophies;
+
+  if (data.meta && data.meta.lastUpdated) {
+    const el = document.getElementById('nav-updated');
+    if (el) el.textContent = 'Updated ' + data.meta.lastUpdated;
+  }
+
+  // Render all sections
+  renderHero();
+  renderH2HSummary();
+  renderH2HTable('h2h-all');
+  renderProfileGrid();
+  renderCareerBars();
+  renderSurfaces('all');
+  renderTournaments('gs');
+  renderSeasons();
+  renderHonours();
+
+  // Wire up interactivity
+  initTabs();
+  initNavActive();
+
+  // Kick off all animations
+  observeReveal();
+  observeBars();
+  observeCounters();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('data.json')
+    .then(res => {
+      if (!res.ok) throw new Error('Failed to load data.json');
+      return res.json();
+    })
+    .then(data => init(data))
+    .catch(err => {
+      console.error('Stats load error:', err);
+      document.querySelector('main').insertAdjacentHTML(
+        'afterbegin',
+        '<div style="text-align:center;padding:40px;color:#ba1a1a;font-size:14px;font-family:Work Sans;">⚠️ Could not load stats. Open via a local server (not file://).</div>'
+      );
+    });
+});
+</script>
+</body>
 </html>
